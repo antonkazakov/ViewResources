@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">View &amp; Resources</string>
+    <string name="name_edit_text">Name</string>
+    <string name="edit_phone_number">Phone number</string>
+    <string name="edit_select">Select</string>
+    <string name="edit_address">Address</string>
+    <string name="edit_city">City</string>
+    <string name="edit_state">State</string>
+    <string name="edit_zip">Zip</string>
+    <string name="edit_birthday">Birthday</string>
+    <string name="edit_notes">Notes</string>
+    <string name="btn_register">REGISTER</string>
 </resources>
