@@ -9,5 +9,9 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="button_base">#2ECC71</color>
+    <color name="dark_main">#263238</color>
+    <color name="neutral_base">#979797</color>
     <color name="edit_base">#F0F0F0</color>
+    <color name="red_cancel">#E74C3C</color>
+    <color name="sign_main">#2980B9</color>
 </resources>

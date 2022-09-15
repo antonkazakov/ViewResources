@@ -14,7 +14,7 @@ class ContactsActivity : AppCompatActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         val mi = menuInflater
-        mi.inflate(R.menu.card_menu, menu)
+        mi.inflate(R.menu.contacts_menu, menu)
         return super.onCreateOptionsMenu(menu)
     }
 }
