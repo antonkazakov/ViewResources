@@ -4,6 +4,214 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     tools:context=".ContactsActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_field_name"
+        android:layout_width="328dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="24dp"
+        app:boxCornerRadiusTopEnd="4dp"
+        app:boxCornerRadiusTopStart="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:endIconDrawable="@drawable/ic_person_24"
+        app:endIconMode="custom"
+        android:hint="@string/name"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_name_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/input_field"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_phone_field"
+        android:layout_width="192dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="25dp"
+        android:hint="@string/phone_number"
+        app:boxCornerRadiusTopEnd="4dp"
+        app:boxCornerRadiusTopStart="4dp"
+        app:endIconDrawable="@drawable/ic_phone_24"
+        app:endIconMode="custom"
+        app:layout_constraintEnd_toStartOf="@+id/select_field"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_field_name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_phone_field"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/input_field" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/select_field"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="120dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="25dp"
+        android:hint="@string/select"
+        app:boxCornerRadiusTopEnd="4dp"
+        app:boxCornerRadiusTopStart="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/input_phone_field"
+        app:layout_constraintTop_toBottomOf="@+id/input_field_name">
+
+        <AutoCompleteTextView
+            android:id="@+id/select_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/input_field"
+            tools:ignore="LabelFor" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_address_name"
+        android:layout_width="328dp"
+        android:layout_height="54dp"
+        android:hint="@string/address"
+        app:boxCornerRadiusTopEnd="4dp"
+        app:boxCornerRadiusTopStart="4dp"
+        app:endIconDrawable="@drawable/ic_location_24"
+        app:endIconMode="custom"
+        android:layout_marginTop="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_phone_field">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_address_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/input_field" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_city_field"
+        android:layout_width="104dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="25dp"
+        android:hint="@string/city"
+        app:boxCornerRadiusTopEnd="4dp"
+        app:boxCornerRadiusTopStart="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/select_state_field"
+        app:layout_constraintTop_toBottomOf="@+id/input_address_name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_city_field"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/input_field" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/select_state_field"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="104dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="25dp"
+        android:hint="@string/state"
+        app:boxCornerRadiusTopEnd="4dp"
+        app:boxCornerRadiusTopStart="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/input_zip"
+        app:layout_constraintStart_toEndOf="@+id/input_city_field"
+        app:layout_constraintTop_toBottomOf="@+id/input_address_name">
+
+        <AutoCompleteTextView
+            android:id="@+id/edit_state_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/input_field"
+            tools:ignore="LabelFor" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_zip"
+        android:layout_width="88dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="25dp"
+        android:hint="@string/zip"
+        app:boxCornerRadiusTopEnd="4dp"
+        app:boxCornerRadiusTopStart="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/select_state_field"
+        app:layout_constraintTop_toBottomOf="@+id/input_address_name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_zip_field"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/input_field" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_dob_field"
+        android:layout_width="328dp"
+        android:layout_height="54dp"
+        android:hint="@string/dob"
+        app:boxCornerRadiusTopEnd="4dp"
+        app:boxCornerRadiusTopStart="4dp"
+        app:endIconDrawable="@drawable/ic_calendar_24"
+        app:endIconMode="custom"
+        android:layout_marginTop="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_state_field">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_dob_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/input_field" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_notes_field"
+        android:layout_width="328dp"
+        android:layout_height="54dp"
+        android:hint="@string/notes"
+        app:boxCornerRadiusTopEnd="4dp"
+        app:boxCornerRadiusTopStart="4dp"
+        app:endIconDrawable="@drawable/ic_create_24"
+        app:endIconMode="custom"
+        android:layout_marginTop="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_dob_field">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_note_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/input_field" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="328dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/register"
+        android:backgroundTint="@color/secondaryGreen"
+        />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
