@@ -11,4 +11,9 @@
     <color name="primaryBlue">#2980B9</color>
     <color name="secondaryGreen">#2ECC71</color>
     <color name="input_field">#F0F0F0</color>
+
+    <color name="primaryDark">#263238</color>
+    <color name="neutral_base">#979797</color>
+    <color name="dotted_line_color">#979797</color>
+    <color name="delete_color">#E74C3C</color>
 </resources>
