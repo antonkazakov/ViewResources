@@ -18,6 +18,7 @@
             android:label="Cart"
             android:exported="false" />
         <activity
+            android:theme="@style/Theme.ContactsActivity"
             android:name=".ContactsActivity"
             android:label="Contacts"
             android:exported="false" />
