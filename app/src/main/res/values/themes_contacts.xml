@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.ContactsActivity" parent="Theme.ViewResources">
+        <item name="colorPrimary">@color/background_contacts</item>
+        <item name="colorPrimaryVariant">@color/background_contacts</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>
