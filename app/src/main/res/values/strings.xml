@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">View &amp; Resources</string>
+    <string name="contacts_activity">Contacts</string>
+    <string name="contacts_toolbar_search">go search</string>
+    <string name="contacts_toolbar_other">more</string>
+    <string name="contacts_hint_name">Name</string>
+    <string name="contacts_hint_phoneNumber">Phone number</string>
+    <string name="contacts_hint_select">Select</string>
+    <string name="contacts_hint_address">Address</string>
+    <string name="contacts_hint_city">City</string>
+    <string name="contacts_hint_state">State</string>
+    <string name="contacts_hint_zip">Zip</string>
+    <string name="contacts_hint_birthday">Birthday</string>
+    <string name="contacts_hint_notes">Notes</string>
+    <string-array name="contacts_select">
+        <item>Mob</item>
+        <item>Home</item>
+        <item>Work</item>
+        <item>Skype</item>
+    </string-array>
 </resources>
