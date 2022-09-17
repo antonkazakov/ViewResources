@@ -4,6 +4,224 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingBottom="@dimen/dimen_medium"
     tools:context=".ContactsActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_medium"
+        android:layout_marginTop="@dimen/dimen_large"
+        android:hint="@string/hint_name"
+        app:boxCornerRadiusTopEnd="@dimen/dimen_round_corners"
+        app:boxCornerRadiusTopStart="@dimen/dimen_round_corners"
+        app:endIconDrawable="@drawable/ic_baseline_person_24"
+        app:endIconMode="custom"
+        app:endIconTint="@color/icon_tint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_light_gray" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_medium"
+        android:layout_marginTop="@dimen/dimen_large"
+        android:hint="@string/hint_name"
+        app:boxCornerRadiusTopEnd="@dimen/dimen_round_corners"
+        app:boxCornerRadiusTopStart="@dimen/dimen_round_corners"
+        app:endIconDrawable="@drawable/ic_baseline_local_phone_24"
+        app:endIconMode="custom"
+        app:endIconTint="@color/icon_tint"
+        app:layout_constraintEnd_toStartOf="@id/select_field"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_light_gray" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/select_field"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_medium"
+        android:hint="@string/hint_select"
+        app:boxCornerRadiusTopEnd="@dimen/dimen_round_corners"
+        app:boxCornerRadiusTopStart="@dimen/dimen_round_corners"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_input_phone"
+        app:layout_constraintTop_toTopOf="@+id/text_input_phone">
+
+        <AutoCompleteTextView
+            android:id="@+id/select_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_light_gray"
+            tools:ignore="LabelFor" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_medium"
+        android:layout_marginTop="@dimen/dimen_large"
+        android:hint="@string/hint_name"
+        app:boxCornerRadiusTopEnd="@dimen/dimen_round_corners"
+        app:boxCornerRadiusTopStart="@dimen/dimen_round_corners"
+        app:endIconDrawable="@drawable/ic_baseline_location_on_24"
+        app:endIconMode="custom"
+        app:endIconTint="@color/icon_tint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_input_phone">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_light_gray" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_city"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_medium"
+        android:layout_marginTop="@dimen/dimen_large"
+        android:hint="@string/hint_city"
+        app:boxCornerRadiusTopEnd="@dimen/dimen_round_corners"
+        app:boxCornerRadiusTopStart="@dimen/dimen_round_corners"
+        app:layout_constraintEnd_toStartOf="@id/select_field_state"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_address">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_light_gray" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/select_field_state"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_medium"
+        android:hint="@string/hint_state"
+        app:boxCornerRadiusTopEnd="@dimen/dimen_round_corners"
+        app:boxCornerRadiusTopStart="@dimen/dimen_round_corners"
+        app:layout_constraintEnd_toStartOf="@id/text_input_zip"
+        app:layout_constraintStart_toEndOf="@+id/text_input_city"
+        app:layout_constraintTop_toTopOf="@+id/text_input_city">
+
+        <AutoCompleteTextView
+            android:id="@+id/select_input_state"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_light_gray"
+            tools:ignore="LabelFor" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_zip"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_large"
+        android:layout_marginEnd="@dimen/dimen_medium"
+        android:hint="@string/hint_zip"
+        app:boxCornerRadiusTopEnd="@dimen/dimen_round_corners"
+        app:boxCornerRadiusTopStart="@dimen/dimen_round_corners"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/select_field_state"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_address">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_zip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_light_gray" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_birthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_medium"
+        android:layout_marginTop="@dimen/dimen_large"
+        android:hint="@string/hint_birthday"
+        app:boxCornerRadiusTopEnd="@dimen/dimen_round_corners"
+        app:boxCornerRadiusTopStart="@dimen/dimen_round_corners"
+        app:endIconDrawable="@drawable/ic_baseline_calendar_today_24"
+        app:endIconMode="custom"
+        app:endIconTint="@color/icon_tint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_input_city">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_light_gray" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_medium"
+        android:layout_marginTop="@dimen/dimen_large"
+        android:hint="@string/hint_notes"
+        app:boxCornerRadiusTopEnd="@dimen/dimen_round_corners"
+        app:boxCornerRadiusTopStart="@dimen/dimen_round_corners"
+        app:endIconDrawable="@drawable/ic_baseline_edit_24"
+        app:endIconMode="custom"
+        app:endIconTint="@color/icon_tint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_input_birthday">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_light_gray" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_medium"
+        android:text="@string/button_register"
+        app:backgroundTint="@color/secondary_green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

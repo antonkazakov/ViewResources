@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">View &amp; Resources</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_select">Select</string>
+    <string name="hint_address">Address</string>
+    <string name="hint_state">State</string>
+    <string name="hint_city">City</string>
+    <string name="hint_zip">Zip</string>
+    <string name="hint_birthday">Birthday</string>
+    <string name="hint_notes">Notes</string>
+    <string name="button_register">Register</string>
+    <string name="button_search">Search</string>
 </resources>
