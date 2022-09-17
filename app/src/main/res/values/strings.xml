@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">View &amp; Resources</string>
+    <string name="top_bar_search">Search</string>
+    <string name="top_bar_more">More</string>
+    <string name="app_top_bar_description">Contacts</string>
+    <string name="input_field_user_name_hint">Name</string>
+    <string name="input_field_phone">Phone number</string>
+    <string name="input_select_hint">Select</string>
+    <string name="input_field_address_hint">Address</string>
+    <string name="input_field_city_hint">City</string>
+    <string name="input_field_state_hint">State</string>
+    <string name="input_field_zip_hint">Zip</string>
+    <string name="input_filed_birthday_hint">Birthday</string>
+    <string name="input_field_notes">Notes</string>
+    <string name="button_register">Register</string>
 </resources>
