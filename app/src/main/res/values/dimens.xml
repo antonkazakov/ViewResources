@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="dimen_small">8dp</dimen>
     <dimen name="dimen_medium">16dp</dimen>
     <dimen name="dimen_large">24dp</dimen>
+    <dimen name="dimen_very_large">32dp</dimen>
     <dimen name="dimen_round_corners">4dp</dimen>
     <dimen name="dimen_small_icon_button">16dp</dimen>
+    <dimen name="dimen_preview_image_size">48dp</dimen>
 </resources>
