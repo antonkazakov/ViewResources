@@ -4,10 +4,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/search"
+        android:id="@+id/shopping_cart"
         android:icon="@drawable/baseline_shopping_cart_24"
-        android:title="@string/shopping_cart"
-        android:contentDescription="@string/shopping_cart"
+        android:title="@string/search"
+        android:contentDescription="@string/content_description_search"
         app:showAsAction="ifRoom" />
 
     <item
@@ -15,5 +15,4 @@
         android:title="@string/more"
         android:contentDescription="@string/content_description_more"
         app:showAsAction="never" />
-
 </menu>
