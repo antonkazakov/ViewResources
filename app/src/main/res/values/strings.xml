@@ -18,8 +18,7 @@
     <string name="birthday">Birthday</string>
     <string name="notes">Notes</string>
     <string name="register">REGISTER</string>
-
-    <!--    Contact end-->
+<!--    Contact end-->
 
 <!--    Cart start-->
     <!--    appBar start-->
@@ -49,4 +48,13 @@
     <string name="tax_number">3.50</string>
     <string name="pay_now">Pay now</string>
 <!--    Cart end-->
+
+<!--    Sign in begin-->
+    <string name="sigh_in">Sign in</string>
+    <string name="register_sigh_in">REGISTER</string>
+    <string name="email">E-mail</string>
+    <string name="email_default">e.g.john@gmail.com</string>
+    <string name="password">Password</string>
+    <string name="reset_password">Reset my password</string>
+<!--    Sign in end-->
 </resources>
