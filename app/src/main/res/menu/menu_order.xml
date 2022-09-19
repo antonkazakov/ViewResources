@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/img_toolbar_order"
+        android:title="@string/contacts_toolbar_order"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_other"
+        android:title="@string/contacts_toolbar_other"
+        app:showAsAction="never"/>
+</menu>
