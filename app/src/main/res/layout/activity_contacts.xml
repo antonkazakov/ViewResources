@@ -12,6 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="?android:actionBarSize"
         android:background="@color/toolbar_contacts"
+        app:titleTextAppearance="@style/contact_toolbar"
         android:gravity="center_vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -40,14 +41,13 @@
         android:layout_marginTop="104dp"
         app:endIconDrawable="@drawable/contacts_icon_name"
         app:endIconMode="custom"
-
         app:layout_constraintEnd_toEndOf="@id/guideline_end"
         app:layout_constraintStart_toStartOf="@+id/guideline_start"
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/text_contactName"
-            style="@style/contacts_hint_text"
+            app:titleTextAppearance="@style/contacts_hint_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/contacts_hint_name"
@@ -70,7 +70,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/text_phoneNumber"
-            style="@style/contacts_hint_text"
+            app:titleTextAppearance="@style/contacts_hint_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/contacts_hint_phoneNumber"
@@ -84,6 +84,7 @@
         android:layout_width="0dp"
         android:layout_height="54dp"
         android:layout_marginStart="8dp"
+        app:titleTextAppearance="@style/contacts_phone_select"
         app:layout_constraintEnd_toEndOf="@id/guideline_end"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@+id/layout_phoneNumber"
@@ -111,7 +112,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/text_contactAdress"
-            style="@style/contacts_hint_text"
+            app:titleTextAppearance="@style/contacts_hint_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/contacts_hint_address"
@@ -131,7 +132,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/text_contactCity"
-            style="@style/contacts_hint_text"
+            app:titleTextAppearance="@style/contacts_hint_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/contacts_hint_city"
@@ -145,6 +146,7 @@
         android:layout_height="54dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
+        app:titleTextAppearance="@style/contacts_stateselect"
         app:layout_constraintEnd_toStartOf="@id/layout_contactZip"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@id/layout_contactCity"
@@ -171,7 +173,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/text_contactZip"
-            style="@style/contacts_hint_text"
+            app:titleTextAppearance="@style/contacts_hint_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/contacts_hint_zip"
@@ -191,7 +193,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/text_contactBirthday"
-            style="@style/contacts_hint_text"
+            app:titleTextAppearance="@style/contacts_hint_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/contacts_hint_birthday"
@@ -211,7 +213,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/text_contactNote"
-            style="@style/contacts_hint_text"
+            app:titleTextAppearance="@style/contacts_hint_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/contacts_hint_notes"
