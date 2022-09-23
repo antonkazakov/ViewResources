@@ -32,4 +32,8 @@
     <string name="alarm_title">Prototyping Kit</string>
     <string name="strawberry_title">Basket &amp; Coffee</string>
     <string name="cost">$US, %1$.2f</string>
+    <string name="sign_in">Sign in</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="reset_my_password">Reset my password</string>
 </resources>
