@@ -15,7 +15,8 @@
         <activity
             android:name=".CartActivity"
             android:label="Cart"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".ContactsActivity"
             android:label="Contacts"
