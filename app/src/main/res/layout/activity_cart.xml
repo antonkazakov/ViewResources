@@ -6,4 +6,136 @@
     android:layout_height="match_parent"
     tools:context=".CartActivity">
 
+    <TextView
+        android:id="@+id/countItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/_4_items_in_your_cart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/fixBikeItem"
+        layout="@layout/item_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/countItems" />
+
+    <include
+        android:id="@+id/skateItem"
+        layout="@layout/item_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fixBikeItem" />
+
+    <include
+        android:id="@+id/rollersItem"
+        layout="@layout/item_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/skateItem" />
+
+    <include
+        android:id="@+id/kickScooterItem"
+        layout="@layout/item_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rollersItem" />
+
+    <ImageView
+        android:id="@+id/dottedImageView"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="52dp"
+        android:src="@drawable/dotted"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/kickScooterItem"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/orderTotalTextView"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/your_order_total"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dottedImageView" />
+
+    <TextView
+        android:id="@+id/amountTextView"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:gravity="right"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/orderTotalTextView"
+        app:layout_constraintTop_toTopOf="@id/orderTotalTextView"
+        tools:ignore="RtlHardcoded"
+        tools:text="TEST" />
+
+    <TextView
+        android:id="@+id/orderDetailTextView"
+        android:layout_width="248dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="16sp"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/orderTotalTextView"
+        tools:text="TEXT" />
+
+    <TextView
+        android:id="@+id/orderCountTextView"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="8dp"
+        android:gravity="right"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/orderDetailTextView"
+        app:layout_constraintTop_toTopOf="@id/orderDetailTextView"
+        tools:ignore="RtlHardcoded"
+        tools:text="096.24" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="154dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/gray"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/pay_now"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:cornerRadius="999dp"
+        app:icon="@drawable/ic_wallet"
+        app:iconTint="@color/light_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/orderDetailTextView" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

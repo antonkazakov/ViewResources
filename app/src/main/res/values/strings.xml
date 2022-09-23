@@ -13,4 +13,14 @@
     <string name="birthday">Birthday</string>
     <string name="notes">Notes</string>
     <string name="register">Register</string>
+    <string name="tag">Tag</string>
+    <string name="caption">Caption</string>
+    <string name="your_order_total">Your order total</string>
+    <string name="pay_now">Pay now</string>
+    <string name="fix_gear">Fix Gear</string>
+    <string name="price">$US,</string>
+    <string name="skateboard">Skateboard</string>
+    <string name="rollers">Rollers</string>
+    <string name="kick_scooter">Kick scooter</string>
+    <string name="_4_items_in_your_cart">4 items in your cart</string>
 </resources>
