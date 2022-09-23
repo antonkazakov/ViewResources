@@ -9,4 +9,6 @@
     <string name="hint_zip">Zip</string>
     <string name="hint_birthday">Birthday</string>
     <string name="hint_notes">Notes</string>
+    <string name="menu_search"></string>
+
 </resources>

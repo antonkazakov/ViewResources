@@ -40,6 +40,8 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="8dp"
+            app:endIconMode="custom"
+            app:endIconDrawable="@drawable/ic_baseline_local_phone_24"
             android:ems="10"
             app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName2"
             app:layout_constraintStart_toStartOf="parent"
@@ -60,13 +62,15 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="16dp"
+            app:endIconMode="custom"
+            app:endIconDrawable="@drawable/ic_baseline_arrow_drop_down_24"
             android:ems="10"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/editTextPhone"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName">
 
-            <AutoCompleteTextView
+            <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="@string/hint_select"
@@ -82,6 +86,8 @@
             android:layout_marginTop="24dp"
             android:layout_marginEnd="16dp"
             android:hint="@string/hint_address"
+            app:endIconMode="custom"
+            app:endIconDrawable="@drawable/ic_baseline_place_24"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextPhone">
@@ -124,6 +130,8 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="8dp"
+            app:endIconMode="custom"
+            app:endIconDrawable="@drawable/ic_baseline_arrow_drop_down_24"
             app:layout_constraintEnd_toStartOf="@+id/textInputLayout4"
             app:layout_constraintStart_toEndOf="@+id/textInputLayout6"
             app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
@@ -132,6 +140,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="@string/hint_state" />
+
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -159,6 +168,8 @@
             android:layout_marginTop="24dp"
             android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:endIconMode="custom"
+            app:endIconDrawable="@drawable/ic_baseline_event_24"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textInputLayout5">
 
@@ -178,6 +189,8 @@
             android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            app:endIconMode="custom"
+            app:endIconDrawable="@drawable/ic_baseline_create_24"
             app:layout_constraintTop_toBottomOf="@+id/textInputLayout7">
 
             <com.google.android.material.textfield.TextInputEditText
