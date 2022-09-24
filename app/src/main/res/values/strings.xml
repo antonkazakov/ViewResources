@@ -23,4 +23,9 @@
     <string name="rollers">Rollers</string>
     <string name="kick_scooter">Kick scooter</string>
     <string name="_4_items_in_your_cart">4 items in your cart</string>
+    <string name="sing_in">Sing in</string>
+    <string name="password">Password</string>
+    <string name="e_mail">E-mail</string>
+    <string name="reset_my_password">Reset my password</string>
+    <string name="sign_in">Sign in</string>
 </resources>
