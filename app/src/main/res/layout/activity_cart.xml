@@ -6,4 +6,133 @@
     android:layout_height="match_parent"
     tools:context=".CartActivity">
 
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/cart_top_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.appbar.MaterialToolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:menu="@menu/cart_top_bar"
+                app:navigationIcon="@drawable/icon_arrow_back"
+                app:titleTextColor="@color/white"
+                app:title="@string/cart_top_bar_description"/>
+        </com.google.android.material.appbar.AppBarLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <TextView
+        android:id="@+id/cart_item_count_description"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/text_height_large"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_marginStart="@dimen/margin_large"
+        android:layout_marginEnd="@dimen/margin_large"
+        android:text="@string/cart_total_count"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cart_top_bar_layout"
+        app:fontFamily="Roboto"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <View
+        android:id="@+id/horizontal_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="240dp"/>
+    
+    <TextView
+        android:id="@+id/order"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/text_height_very_large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/order_price"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_divider"
+        android:layout_marginTop="@dimen/margin_top_bar"
+        android:layout_marginStart="@dimen/margin_large"
+        app:layout_constraintHorizontal_weight="0.75"
+        android:text="Your order total"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:fontFamily="Roboto"/>
+
+    <TextView
+        android:id="@+id/order_price"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/text_height_very_large"
+        app:layout_constraintStart_toEndOf="@id/order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/order"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_large"
+        app:layout_constraintHorizontal_weight="0.25"
+        android:text="41$"
+        android:textSize="20sp"
+        android:gravity="right"
+        android:textStyle="bold"
+        app:fontFamily="Roboto"/>
+    
+    <TextView
+        android:id="@+id/order_detailed"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        app:layout_constraintTop_toBottomOf="@id/order"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/order_detailed_price"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_marginStart="@dimen/margin_large"
+        app:layout_constraintHorizontal_weight="0.75"
+        android:text="Subtotal\nShipping\nTax"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/order_detailed_price"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        app:layout_constraintTop_toBottomOf="@id/order"
+        app:layout_constraintStart_toEndOf="@id/order_detailed"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_large"
+        app:layout_constraintHorizontal_weight="0.25"
+        android:text="20\n15\n80"
+        android:textSize="20sp"
+        android:gravity="right"/>
+
+    <Button
+        android:layout_width="154dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="24dp"
+        app:backgroundTint="#263238"
+        app:cornerRadius="999dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_detailed"
+        app:icon="@drawable/icon_pay"
+        android:text="Pay now"
+        android:textAllCaps="false"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

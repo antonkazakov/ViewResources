@@ -30,13 +30,13 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/input_field_user_name"
-        android:layout_width="@dimen/text_input_field_length_large"
-        android:layout_height="@dimen/text_input_field_height_large"
-        android:layout_marginStart="@dimen/text_input_field_margin_left"
-        android:layout_marginTop="@dimen/text_input_field_margin_top_bar"
-        android:layout_marginEnd="@dimen/text_input_field_margin_right"
-        app:boxCornerRadiusTopEnd="@dimen/text_input_field_radius"
-        app:boxCornerRadiusTopStart="@dimen/text_input_field_radius"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/text_input_field_height"
+        android:layout_marginStart="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_top_bar"
+        android:layout_marginEnd="@dimen/margin_large"
+        app:boxCornerRadiusTopEnd="@dimen/corner_radius"
+        app:boxCornerRadiusTopStart="@dimen/corner_radius"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/app_top_bar_layout"
@@ -51,15 +51,15 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/input_field_phone"
         android:layout_width="0dp"
-        android:layout_height="@dimen/text_input_field_height_large"
-        android:layout_marginTop="@dimen/text_input_field_margin_top"
-        android:layout_marginEnd="@dimen/text_input_field_margin_right"
+        android:layout_height="@dimen/text_input_field_height"
+        android:layout_marginTop="@dimen/margin_very_large"
+        android:layout_marginEnd="@dimen/margin_large"
         app:layout_constraintStart_toStartOf="@+id/input_field_user_name"
         app:layout_constraintTop_toBottomOf="@+id/input_field_user_name"
         app:layout_constraintEnd_toStartOf="@+id/input_select"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:boxCornerRadiusTopEnd="@dimen/text_input_field_radius"
-        app:boxCornerRadiusTopStart="@dimen/text_input_field_radius"
+        app:boxCornerRadiusTopEnd="@dimen/corner_radius"
+        app:boxCornerRadiusTopStart="@dimen/corner_radius"
         android:hint="@string/input_field_phone"
         app:endIconDrawable="@drawable/icon_phone"
         app:endIconMode="custom">
@@ -71,11 +71,11 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/input_select"
         android:layout_width="120dp"
-        android:layout_height="@dimen/text_input_field_height_large"
+        android:layout_height="@dimen/text_input_field_height"
         app:layout_constraintEnd_toEndOf="@+id/input_field_user_name"
         app:layout_constraintTop_toTopOf="@+id/input_field_phone"
-        app:boxCornerRadiusTopEnd="@dimen/text_input_field_radius"
-        app:boxCornerRadiusTopStart="@dimen/text_input_field_radius"
+        app:boxCornerRadiusTopEnd="@dimen/corner_radius"
+        app:boxCornerRadiusTopStart="@dimen/corner_radius"
         android:hint="@string/input_select_hint"
         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
         <AutoCompleteTextView
@@ -87,13 +87,14 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/input_field_address"
-        android:layout_width="@dimen/text_input_field_length_large"
-        android:layout_height="@dimen/text_input_field_height_large"
-        android:layout_marginTop="@dimen/text_input_field_margin_top"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/text_input_field_height"
+        android:layout_marginTop="@dimen/margin_very_large"
         app:layout_constraintStart_toStartOf="@+id/input_field_phone"
         app:layout_constraintTop_toBottomOf="@+id/input_field_phone"
-        app:boxCornerRadiusTopEnd="@dimen/text_input_field_radius"
-        app:boxCornerRadiusTopStart="@dimen/text_input_field_radius"
+        app:layout_constraintEnd_toEndOf="@id/input_select"
+        app:boxCornerRadiusTopEnd="@dimen/corner_radius"
+        app:boxCornerRadiusTopStart="@dimen/corner_radius"
         android:hint="@string/input_field_address_hint"
         app:endIconDrawable="@drawable/icon_location"
         app:endIconMode="custom">
@@ -105,15 +106,15 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/input_field_city"
         android:layout_width="104dp"
-        android:layout_height="@dimen/text_input_field_height_large"
-        android:layout_marginTop="@dimen/text_input_field_margin_top"
-        android:layout_marginEnd="@dimen/text_input_field_margin_right"
+        android:layout_height="@dimen/text_input_field_height"
+        android:layout_marginTop="@dimen/margin_very_large"
+        android:layout_marginEnd="@dimen/margin_large"
         app:layout_constraintStart_toStartOf="@+id/input_field_address"
         app:layout_constraintTop_toBottomOf="@+id/input_field_address"
         app:layout_constraintEnd_toStartOf="@+id/input_select_state"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:boxCornerRadiusTopEnd="@dimen/text_input_field_radius"
-        app:boxCornerRadiusTopStart="@dimen/text_input_field_radius"
+        app:boxCornerRadiusTopEnd="@dimen/corner_radius"
+        app:boxCornerRadiusTopStart="@dimen/corner_radius"
         android:hint="@string/input_field_city_hint">
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -123,10 +124,10 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/input_select_state"
         android:layout_width="0dp"
-        android:layout_height="@dimen/text_input_field_height_large"
-        android:layout_marginEnd="@dimen/text_input_field_margin_right"
-        app:boxCornerRadiusTopEnd="@dimen/text_input_field_radius"
-        app:boxCornerRadiusTopStart="@dimen/text_input_field_radius"
+        android:layout_height="@dimen/text_input_field_height"
+        android:layout_marginEnd="@dimen/margin_large"
+        app:boxCornerRadiusTopEnd="@dimen/corner_radius"
+        app:boxCornerRadiusTopStart="@dimen/corner_radius"
         app:layout_constraintTop_toTopOf="@+id/input_field_city"
         app:layout_constraintStart_toEndOf="@+id/input_field_city"
         app:layout_constraintEnd_toStartOf="@+id/input_field_zip"
@@ -142,9 +143,9 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/input_field_zip"
         android:layout_width="0dp"
-        android:layout_height="@dimen/text_input_field_height_large"
-        app:boxCornerRadiusTopEnd="@dimen/text_input_field_radius"
-        app:boxCornerRadiusTopStart="@dimen/text_input_field_radius"
+        android:layout_height="@dimen/text_input_field_height"
+        app:boxCornerRadiusTopEnd="@dimen/corner_radius"
+        app:boxCornerRadiusTopStart="@dimen/corner_radius"
         app:layout_constraintEnd_toEndOf="@+id/input_field_address"
         app:layout_constraintTop_toTopOf="@+id/input_field_city"
         android:hint="@string/input_field_zip_hint">
@@ -155,13 +156,14 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/input_field_birthday"
-        android:layout_width="@dimen/text_input_field_length_large"
-        android:layout_height="@dimen/text_input_field_height_large"
-        android:layout_marginTop="@dimen/text_input_field_margin_top"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/text_input_field_height"
+        android:layout_marginTop="@dimen/margin_very_large"
         app:layout_constraintStart_toStartOf="@id/input_field_city"
         app:layout_constraintTop_toBottomOf="@id/input_field_city"
-        app:boxCornerRadiusTopEnd="@dimen/text_input_field_radius"
-        app:boxCornerRadiusTopStart="@dimen/text_input_field_radius"
+        app:layout_constraintEnd_toEndOf="@id/input_field_zip"
+        app:boxCornerRadiusTopEnd="@dimen/corner_radius"
+        app:boxCornerRadiusTopStart="@dimen/corner_radius"
         android:hint="@string/input_filed_birthday_hint"
         app:endIconDrawable="@drawable/icon_calendar"
         app:endIconMode="custom">
@@ -172,13 +174,14 @@
     
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/input_field_notes"
-        android:layout_width="@dimen/text_input_field_length_large"
-        android:layout_height="@dimen/text_input_field_height_large"
-        android:layout_marginTop="@dimen/text_input_field_margin_top"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/text_input_field_height"
+        android:layout_marginTop="@dimen/margin_very_large"
         app:layout_constraintStart_toStartOf="@+id/input_field_birthday"
         app:layout_constraintTop_toBottomOf="@id/input_field_birthday"
-        app:boxCornerRadiusTopEnd="@dimen/text_input_field_radius"
-        app:boxCornerRadiusTopStart="@dimen/text_input_field_radius"
+        app:layout_constraintEnd_toEndOf="@id/input_field_birthday"
+        app:boxCornerRadiusTopEnd="@dimen/corner_radius"
+        app:boxCornerRadiusTopStart="@dimen/corner_radius"
         app:endIconDrawable="@drawable/icon_note"
         app:endIconMode="custom"
         android:hint="@string/input_field_notes">
@@ -189,11 +192,12 @@
     
     <Button
         android:id="@+id/button_register"
-        android:layout_width="@dimen/button_length_large"
-        android:layout_height="@dimen/button_height_large"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/button_height"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/input_field_notes"
+        app:layout_constraintEnd_toEndOf="@+id/input_field_notes"
         app:backgroundTint="@color/register_button"
         android:text="@string/button_register"/>
 
