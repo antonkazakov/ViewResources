@@ -2,14 +2,16 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:paddingBottom= "@dimen/cart_item_image_padding">
 
     <ImageView
         android:id="@+id/item_image"
         android:layout_width="@dimen/cart_item_image_width"
         android:layout_height="@dimen/cart_item_image_height"
-        android:layout_marginStart="@dimen/margin_large"
-        android:background="#000000"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginBottom="@dimen/margin_small"
         app:layout_constraintEnd_toStartOf="@+id/item_name"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,9 +20,10 @@
     <TextView
         android:id="@+id/item_name"
         android:layout_width="0dp"
-        android:layout_height="@dimen/text_height_medium"
-        android:layout_marginStart="@dimen/margin_large"
-        android:background="#AA1010"
+        android:layout_height="@dimen/text_height_small"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:textSize="16sp"
+        android:layout_marginTop="@dimen/margin_medium"
         app:layout_constraintEnd_toStartOf="@+id/item_price"
         app:layout_constraintHorizontal_weight="0.75"
         app:layout_constraintStart_toEndOf="@+id/item_image"
@@ -29,10 +32,12 @@
     <TextView
         android:id="@+id/item_price"
         android:layout_width="0dp"
-        android:layout_height="@dimen/text_height_medium"
-        android:layout_marginLeft="@dimen/margin_small"
-        android:layout_marginRight="@dimen/margin_large"
-        android:background="#38ED8B"
+        android:layout_height="@dimen/text_height_small"
+        android:layout_marginStart="@dimen/margin_smaller"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:textSize="16sp"
+        android:gravity="end"
+        android:layout_marginTop="@dimen/margin_medium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="0.25"
         app:layout_constraintStart_toEndOf="@+id/item_name"
@@ -41,8 +46,8 @@
     <TextView
         android:id="@+id/item_caption"
         android:layout_width="0dp"
-        android:layout_height="@dimen/text_height_small"
-        android:background="#38ED8B"
+        android:layout_height="@dimen/text_height_smaller"
+        android:textSize="@dimen/text_size_smaller"
         app:layout_constraintTop_toBottomOf="@id/item_name"
         app:layout_constraintStart_toEndOf="@id/item_image"
         app:layout_constraintEnd_toStartOf="@+id/item_icon"
@@ -55,8 +60,8 @@
         app:layout_constraintTop_toBottomOf="@id/item_name"
         app:layout_constraintStart_toEndOf="@id/item_caption"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginLeft="@dimen/margin_small"
-        android:layout_marginRight="@dimen/margin_large"
-        android:background="#9C27B0"/>
+        android:layout_marginStart="@dimen/margin_smaller"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:src="@drawable/icon_close"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

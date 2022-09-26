@@ -17,6 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/cart_top_bar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:menu="@menu/cart_top_bar"
@@ -27,42 +28,67 @@
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
     <TextView
-        android:id="@+id/cart_item_count_description"
+        android:id="@+id/cart_count_text"
         android:layout_width="0dp"
-        android:layout_height="@dimen/text_height_large"
-        android:layout_marginTop="@dimen/margin_large"
-        android:layout_marginStart="@dimen/margin_large"
-        android:layout_marginEnd="@dimen/margin_large"
-        android:text="@string/cart_total_count"
+        android:layout_height="@dimen/text_height_small"
+        app:layout_constraintTop_toBottomOf="@id/cart_top_bar_layout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cart_top_bar_layout"
-        app:fontFamily="Roboto"/>
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:textSize="@dimen/text_size_small"
+        android:text="@string/cart_total_count"/>
 
+    <include
+        layout="@layout/cart_item"
+        android:id="@+id/cart_item_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cart_count_text"
+        android:layout_marginTop="@dimen/margin_smaller"
+        />
 
+    <include
+        layout="@layout/cart_item"
+        android:id="@+id/cart_item_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cart_item_1"
+        android:layout_marginTop="@dimen/margin_smaller"/>
 
+    <include
+        layout="@layout/cart_item"
+        android:id="@+id/cart_item_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cart_item_2"
+        android:layout_marginTop="@dimen/margin_smaller"/>
 
-
-
-
-
-
-
-
-
-
-
-
-
+    <include
+        layout="@layout/cart_item"
+        android:id="@+id/cart_item_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cart_item_3"
+        android:layout_marginTop="@dimen/margin_smaller"/>
 
     <View
         android:id="@+id/horizontal_divider"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="?android:attr/listDivider"
+        android:layout_height="2dp"
+        android:background="@drawable/dash_divider"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="240dp"/>
-    
+        android:layout_marginBottom="@dimen/cart_divider_height"/>
+
     <TextView
         android:id="@+id/order"
         android:layout_width="0dp"
@@ -70,13 +96,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/order_price"
         app:layout_constraintTop_toBottomOf="@id/horizontal_divider"
-        android:layout_marginTop="@dimen/margin_top_bar"
-        android:layout_marginStart="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_marginStart="@dimen/margin_medium"
         app:layout_constraintHorizontal_weight="0.75"
-        android:text="Your order total"
-        android:textSize="20sp"
+        android:textSize="@dimen/text_size_large"
         android:textStyle="bold"
-        app:fontFamily="Roboto"/>
+        android:text="Your order total"/>
 
     <TextView
         android:id="@+id/order_price"
@@ -85,54 +110,91 @@
         app:layout_constraintStart_toEndOf="@id/order"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/order"
-        android:layout_marginStart="@dimen/margin_small"
-        android:layout_marginEnd="@dimen/margin_large"
+        android:layout_marginStart="@dimen/margin_smaller"
+        android:layout_marginEnd="@dimen/margin_medium"
         app:layout_constraintHorizontal_weight="0.25"
-        android:text="41$"
-        android:textSize="20sp"
-        android:gravity="right"
+        android:textSize="@dimen/text_size_large"
         android:textStyle="bold"
-        app:fontFamily="Roboto"/>
-    
-    <TextView
+        android:gravity="end"
+        android:text="41$"/>
+
+    <LinearLayout
         android:id="@+id/order_detailed"
         android:layout_width="0dp"
-        android:layout_height="72dp"
-        app:layout_constraintTop_toBottomOf="@id/order"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/order_detailed_price"
-        android:layout_marginTop="@dimen/margin_large"
-        android:layout_marginStart="@dimen/margin_large"
+        app:layout_constraintEnd_toStartOf="@id/detailed_price"
+        app:layout_constraintTop_toBottomOf="@id/order"
         app:layout_constraintHorizontal_weight="0.75"
-        android:text="Subtotal\nShipping\nTax"
-        android:textSize="20sp"/>
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginStart="@dimen/margin_medium">
+        <TextView
+            android:id="@+id/order_subtotal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_height_medium"
+            android:textSize="@dimen/text_size_medium"
+            android:text="Subtotal"/>
+        <TextView
+            android:id="@+id/order_shipping"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_height_medium"
+            android:textSize="@dimen/text_size_medium"
+            android:text="Shipping"/>
+        <TextView
+            android:id="@+id/order_tax"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_height_medium"
+            android:textSize="@dimen/text_size_medium"
+            android:text="Tax"/>
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/order_detailed_price"
+    <LinearLayout
+        android:id="@+id/detailed_price"
         android:layout_width="0dp"
-        android:layout_height="72dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@id/order"
         app:layout_constraintStart_toEndOf="@id/order_detailed"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="@dimen/margin_large"
-        android:layout_marginStart="@dimen/margin_small"
-        android:layout_marginEnd="@dimen/margin_large"
         app:layout_constraintHorizontal_weight="0.25"
-        android:text="20\n15\n80"
-        android:textSize="20sp"
-        android:gravity="right"/>
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginStart="@dimen/margin_smaller"
+        android:layout_marginEnd="@dimen/margin_medium">
+        <TextView
+            android:id="@+id/subtotal_price"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_height_medium"
+            android:textSize="@dimen/text_size_medium"
+            android:gravity="end"
+            android:text="36.00"/>
+        <TextView
+            android:id="@+id/shipping_price"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_height_medium"
+            android:textSize="@dimen/text_size_medium"
+            android:gravity="end"
+            android:text="2.00"/>
+        <TextView
+            android:id="@+id/tax_price"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_height_medium"
+            android:textSize="@dimen/text_size_medium"
+            android:gravity="end"
+            android:text="3.50"/>
+    </LinearLayout>
 
     <Button
-        android:layout_width="154dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="24dp"
-        app:backgroundTint="#263238"
-        app:cornerRadius="999dp"
+        android:layout_width="@dimen/pay_button_width"
+        android:layout_height="@dimen/pay_button_height"
+        android:layout_marginTop="@dimen/margin_large"
+        app:backgroundTint="@color/pay_button"
+        app:cornerRadius="@dimen/corner_rounded"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/order_detailed"
         app:icon="@drawable/icon_pay"
-        android:text="Pay now"
+        android:text="@string/button_pay_now"
         android:textAllCaps="false"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

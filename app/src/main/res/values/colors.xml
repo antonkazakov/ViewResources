@@ -9,4 +9,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="register_button">#2ECC71</color>
+    <color name="pay_button">#263238</color>
 </resources>
