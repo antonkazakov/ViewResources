@@ -33,6 +33,7 @@ class CartActivity : AppCompatActivity() {
 
         adapter = CartAdapter(this, listOrder,formatter) {
         listOrder.remove(it)
+            updateTextItems(listOrder.size)
             adapter.notifyDataSetChanged()
 
         }
@@ -42,6 +43,7 @@ class CartActivity : AppCompatActivity() {
     }
 
     private fun updateTextItems(values:Int){
-        textItems.text = resources.getQuantityString(R.plurals.carts_item,values,values)
+        if(values==0) textItems.text = resources.getString(R.string.cart_not_items)
+        else textItems.text = resources.getQuantityString(R.plurals.carts_item,values,values)
     }
 }
