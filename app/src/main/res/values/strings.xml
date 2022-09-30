@@ -5,6 +5,7 @@
     <string name="contacts_toolbar_search">go search</string>
     <string name="contacts_toolbar_order">your order</string>
     <string name="contacts_toolbar_other">more</string>
+    <string name="contacts_button_register">Register</string>
     <string name="contacts_hint_name">Name</string>
     <string name="contacts_hint_phoneNumber">Phone number</string>
     <string name="contacts_hint_select">Select</string>
@@ -15,11 +16,13 @@
     <string name="contacts_hint_birthday">Birthday</string>
     <string name="contacts_hint_notes">Notes</string>
     <string name="cart_howmany_items">%d items in your cart</string>
+    <string name="cart_not_items">Your order is empty, go to the shopping!</string>
     <string name="order_total">Your order total</string>
     <string name="pay_now">Pay now</string>
     <string name="order_plus">"Subtotal\nShipping\nTax"</string>
     <string name="product_costs">"$US %.2f "</string>
     <string name="order_values">"36.00\n2.00\n3.50"</string>
+    <string name="order_totalvalues">41.24</string>
     <string name="name_order_1">On the top</string>
     <string name="name_order_2">Forever friends</string>
     <string name="name_order_3">Prototyping Kit</string>
