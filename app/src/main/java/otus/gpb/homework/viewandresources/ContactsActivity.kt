@@ -13,8 +13,7 @@ class ContactsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_contacts)
-        val toolbar = findViewById<Toolbar>(R.id.toolbar_contacts)
-        toolbar.setNavigationOnClickListener { finish() }
+        findViewById<Toolbar>(R.id.toolbar_contacts).setNavigationOnClickListener { finish() }
         textSelect = findViewById(R.id.text_phoneSelect)
         setAdapterSelect()
 
