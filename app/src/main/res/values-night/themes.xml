@@ -15,4 +15,85 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+
+    <style name="MyThemeContact" parent="Theme.ViewResources">
+        <item name="colorPrimary">@color/contacts_allfields_darkTheme</item>
+        <item name="colorPrimaryVariant">@color/contacts_toolbarBack_darkTheme</item>
+        <item name="toolbarStyle">@style/myToolbar</item>
+        <item name="textInputStyle">@style/myTextInput</item>
+    </style>
+    <style name="myToolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="font">@font/roboto_regular</item>
+        <item name="android:titleTextAppearance">@style/contact_toolbar</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="titleTextColor">@color/contacts_textColorAll_darkTheme</item>
+        <item name="colorOnPrimary">@color/contacts_textColorAll_darkTheme</item>
+        <item name="navigationIconTint">@color/contacts_toolbaricon_darkTheme</item>
+        <item name="colorControlNormal">@color/contacts_toolbaricon_darkTheme</item>
+        <item name="android:statusBarColor">@color/contacts_allfields_darkTheme</item>
+    </style>
+
+    <style name="myTextInput" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="font">@font/roboto_regular</item>
+        <item name="boxBackgroundColor">@color/contacts_allfields_darkTheme</item>
+        <item name="endIconTint">@color/icon_contacts</item>
+        <item name="hintTextColor">@color/contacts_textColorAll_darkTheme</item>
+        <item name="android:textColorHint">@color/contacts_textColorAll_darkTheme</item>
+        <item name="helperTextTextColor">@color/contacts_textColorAll_darkTheme</item>
+        <item name="boxStrokeColor">@color/contacts_allfields_darkTheme</item>
+    </style>
+    <style name="myTextExposedDropdownMenu" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
+        <item name="boxBackgroundColor">@color/contacts_allfields_darkTheme</item>
+        <item name="hintTextColor">@color/contacts_textColorAll_darkTheme</item>
+        <item name="textFillColor">@color/contacts_textColorAll_darkTheme</item>
+        <item name="android:textColorHint">@color/contacts_textColorAll_darkTheme</item>
+        <item name="helperTextTextColor">@color/contacts_textColorAll_darkTheme</item>
+        <item name="boxStrokeColor">@color/contacts_allfields_darkTheme</item>
+    </style>
+    <style name="myButtonStyle" parent="Widget.MaterialComponents.Button.Icon">
+        <item name="backgroundTint">@color/contacts_buttonReg_darkTheme</item>
+        <item name="android:textColor">@color/contacts_toolbarBack_darkTheme</item>
+    </style>
+
+    <style name="myThemeCart" parent="MyThemeContact">
+        <item name="android:textColor">@color/contacts_textColorAll_darkTheme</item>
+    </style>
+    <style name="myThemeCartOrderTotalText" parent="myThemeCart">
+        <item name="android:textColor">@color/cart_orderTotaltext_darkTheme</item>
+    </style>
+    <style name="myThemeCartCart_itemsIncart" parent="myThemeCart">
+        <item name="android:textColor">@color/cart_itemsIncart_darkTheme</item>
+    </style>
+    <style name="myThemeCartCart_imageDelete" parent="myThemeCart">
+        <item name="colorControlNormal">@color/cart_icon_delete_darkTheme</item>
+    </style>
+
+    <style name="myButtonStyleCart" parent="Widget.MaterialComponents.ExtendedFloatingActionButton.Icon">
+        <item name="backgroundTint">@color/cart_buttonBuy_darkTheme</item>
+        <item name="android:textColor">@color/cart_buttonBuyText_darkTheme</item>
+        <item name="iconTint">@color/cart_buttonBuyText_darkTheme</item>
+    </style>
+
+    <style name="myDialogStyle" parent="MyThemeContact">
+        <item name="android:textColor">@color/dialogRegister_textColorAll_darkTheme</item>
+        <item name="textInputStyle">@style/myTextInputDialog</item>
+
+    </style>
+    <style name="myTextInputDialog" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="font">@font/roboto_regular</item>
+        <item name="helperTextTextColor">@color/dialogRegister_textColorAll_darkTheme</item>
+        <item name="android:textColorHint">@color/dialogRegister_textColorAll_darkTheme</item>
+        <item name="android:textColor">@color/dialogRegister_textColorAll_darkTheme</item>
+        <item name="helperTextTextAppearance">@style/dialog_helptext</item>
+    </style>
+    <style name="myDialog_resetPassword" parent="myDialogStyle">
+        <item name="android:textColor">@color/dialogRegister_textColorButton</item>
+    </style>
+    <style name="myDialog_buttonDown" parent="Widget.MaterialComponents.Button.Icon">
+        <item name="android:textColor">@color/dialogRegister_buttonDownText</item>
+        <item name="backgroundTint">@color/dialogRegister_textColorButton</item>
+    </style>
+    <style name="myDialog_buttonRegister" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/dialogRegister_textColorAll_darkTheme</item>
+    </style>
 </resources>
