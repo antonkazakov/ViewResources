@@ -8,12 +8,10 @@
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar_contacts"
-        style="@style/Widget.MaterialComponents.Toolbar.Primary"
         android:layout_width="match_parent"
         android:layout_height="?android:actionBarSize"
-        android:background="@color/toolbar_contacts"
-        app:titleTextAppearance="@style/contact_toolbar"
         android:gravity="center_vertical"
+        android:theme="@style/MyThemeContact"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:menu="@menu/menu_contacts"
@@ -35,23 +33,24 @@
         app:layout_constraintGuide_end="16dp" />
 
     <com.google.android.material.textfield.TextInputLayout
+
         android:id="@+id/layout_contactName"
         android:layout_width="0dp"
         android:layout_height="54dp"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="54dp"
         app:endIconDrawable="@drawable/contacts_icon_name"
         app:endIconMode="custom"
         app:layout_constraintEnd_toEndOf="@id/guideline_end"
         app:layout_constraintStart_toStartOf="@+id/guideline_start"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/toolbar_contacts">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/text_contactName"
-            app:titleTextAppearance="@style/contacts_hint_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/contacts_hint_name"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            app:titleTextAppearance="@style/contacts_hint_text" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -70,25 +69,25 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/text_phoneNumber"
-            app:titleTextAppearance="@style/contacts_hint_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/contacts_hint_phoneNumber"
-            android:inputType="phone" />
+            android:inputType="phone"
+            app:titleTextAppearance="@style/contacts_hint_text" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/layout_phoneSelect"
-        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        style="@style/myTextExposedDropdownMenu"
         android:layout_width="0dp"
         android:layout_height="54dp"
         android:layout_marginStart="8dp"
-        app:titleTextAppearance="@style/contacts_phone_select"
         app:layout_constraintEnd_toEndOf="@id/guideline_end"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@+id/layout_phoneNumber"
-        app:layout_constraintTop_toTopOf="@id/layout_phoneNumber">
+        app:layout_constraintTop_toTopOf="@id/layout_phoneNumber"
+        app:titleTextAppearance="@style/contacts_phone_select">
 
         <AutoCompleteTextView
             android:id="@+id/text_phoneSelect"
@@ -112,11 +111,11 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/text_contactAdress"
-            app:titleTextAppearance="@style/contacts_hint_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/contacts_hint_address"
-            android:inputType="textPostalAddress" />
+            android:inputType="textPostalAddress"
+            app:titleTextAppearance="@style/contacts_hint_text" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -132,25 +131,25 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/text_contactCity"
-            app:titleTextAppearance="@style/contacts_hint_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/contacts_hint_city"
-            android:inputType="textPostalAddress" />
+            android:inputType="textPostalAddress"
+            app:titleTextAppearance="@style/contacts_hint_text" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/layout_stateSelect"
-        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        style="@style/myTextExposedDropdownMenu"
         android:layout_width="0dp"
         android:layout_height="54dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        app:titleTextAppearance="@style/contacts_stateselect"
         app:layout_constraintEnd_toStartOf="@id/layout_contactZip"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@id/layout_contactCity"
-        app:layout_constraintTop_toTopOf="@id/layout_contactCity">
+        app:layout_constraintTop_toTopOf="@id/layout_contactCity"
+        app:titleTextAppearance="@style/contacts_stateselect">
 
         <AutoCompleteTextView
             android:id="@+id/text_stateSelect"
@@ -173,11 +172,11 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/text_contactZip"
-            app:titleTextAppearance="@style/contacts_hint_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/contacts_hint_zip"
-            android:inputType="textPostalAddress" />
+            android:inputType="textPostalAddress"
+            app:titleTextAppearance="@style/contacts_hint_text" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -193,11 +192,11 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/text_contactBirthday"
-            app:titleTextAppearance="@style/contacts_hint_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/contacts_hint_birthday"
-            android:inputType="date" />
+            android:inputType="date"
+            app:titleTextAppearance="@style/contacts_hint_text" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -213,10 +212,22 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/text_contactNote"
-            app:titleTextAppearance="@style/contacts_hint_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/contacts_hint_notes"
-            android:inputType="textAutoCorrect" />
+            android:inputType="textAutoCorrect"
+            app:titleTextAppearance="@style/contacts_hint_text" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        style="@style/myButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:elevation="8dp"
+        android:text="@string/contacts_button_register"
+        android:textAppearance="@style/contact_register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintStart_toStartOf="@+id/guideline_start" />
 </androidx.constraintlayout.widget.ConstraintLayout>

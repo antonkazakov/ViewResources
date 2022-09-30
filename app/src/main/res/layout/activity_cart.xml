@@ -8,7 +8,7 @@
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar_cart"
-        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        android:theme="@style/myThemeCart"
         android:layout_width="match_parent"
         android:layout_height="?android:actionBarSize"
         android:gravity="center_vertical"
@@ -34,6 +34,7 @@
         app:layout_constraintGuide_end="16dp" />
 
     <TextView
+        style="@style/myThemeCartCart_itemsIncart"
         android:id="@+id/text_userCart"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -41,7 +42,7 @@
         app:layout_constraintEnd_toStartOf="@id/guideline_end"
         app:layout_constraintStart_toEndOf="@+id/guideline_start"
         app:layout_constraintTop_toBottomOf="@id/toolbar_cart"
-        app:titleTextAppearance="@style/textview_cart"
+        android:textAppearance="@style/textview_cart"
         tools:text="...items in cart" />
 
     <ListView
@@ -64,8 +65,9 @@
         app:layout_constraintTop_toBottomOf="@id/list_userOrder" />
 
     <TextView
+        style="@style/myThemeCartOrderTotalText"
         android:id="@+id/order_total"
-        style="@style/order_total"
+        android:textAppearance="@style/order_total"
         android:layout_width="0dp"
         android:layout_height="32dp"
         android:layout_alignParentBottom="true"
@@ -79,8 +81,9 @@
         app:layout_constraintTop_toBottomOf="@id/divider" />
 
     <TextView
+        style="@style/myThemeCartOrderTotalText"
         android:id="@+id/cost_total"
-        style="@style/order_total"
+        android:textAppearance="@style/order_total"
         android:layout_width="72dp"
         android:layout_height="32dp"
         android:layout_marginBottom="184dp"
@@ -90,9 +93,10 @@
         app:layout_constraintEnd_toEndOf="@id/guideline_end"
         app:layout_constraintStart_toEndOf="@id/order_total"
         app:layout_constraintTop_toTopOf="@id/order_total"
-        tools:text="65" />
+        android:text="@string/order_totalvalues" />
 
     <TextView
+        style="@style/myThemeCart"
         android:id="@+id/value_items"
         android:layout_width="0dp"
         android:layout_height="72dp"
@@ -103,11 +107,12 @@
         app:layout_constraintEnd_toEndOf="@id/order_total"
         app:layout_constraintStart_toStartOf="@id/guideline_start"
         app:layout_constraintTop_toBottomOf="@id/order_total"
-        app:titleTextAppearance="@style/order_value" />
+        android:textAppearance="@style/order_value" />
 
     <TextView
+        style="@style/myThemeCart"
         android:id="@+id/value"
-        style="@style/order_value"
+        android:textAppearance="@style/order_value"
         android:layout_width="72dp"
         android:layout_height="72dp"
         android:layout_marginStart="8dp"
@@ -125,14 +130,12 @@
         android:layout_height="56dp"
         android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
-        android:backgroundTint="@color/dark_color"
         android:contentDescription="@string/pay_now"
         android:text="@string/pay_now"
         android:textAppearance="@style/pay_now"
-        android:textColor="@color/white"
         app:icon="@drawable/cart_icon_paynow"
         app:iconPadding="11dp"
-        app:iconTint="@color/icon_gray"
+        style="@style/myButtonStyleCart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/guideline_end"
         app:layout_constraintStart_toEndOf="@id/guideline_start" />
