@@ -8,210 +8,204 @@
     tools:context=".ContactsActivity">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/input_field_name"
-        android:layout_width="328dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="24dp"
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/name"
         app:boxCornerRadiusTopEnd="4dp"
         app:boxCornerRadiusTopStart="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:endIconDrawable="@drawable/ic_person_24"
         app:endIconMode="custom"
-        android:hint="@string/name"
-        >
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edit_name_input"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/input_field"
-            />
-
+            android:backgroundTint="@color/input_field" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/input_phone_field"
-        android:layout_width="192dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="25dp"
+        android:id="@+id/edit_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="16dp"
         android:hint="@string/phone_number"
         app:boxCornerRadiusTopEnd="4dp"
         app:boxCornerRadiusTopStart="4dp"
         app:endIconDrawable="@drawable/ic_phone_24"
         app:endIconMode="custom"
-        app:layout_constraintEnd_toStartOf="@+id/select_field"
+        app:layout_constraintEnd_toStartOf="@id/edit_code"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintHorizontal_weight="3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_field_name">
+        app:layout_constraintTop_toBottomOf="@id/edit_name">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edit_phone_field"
+            android:id="@+id/edit_phone_input"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/input_field" />
-
+            android:backgroundTint="@color/input_field" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/select_field"
+        android:id="@+id/edit_code"
         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
-        android:layout_width="120dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="25dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
         android:hint="@string/select"
         app:boxCornerRadiusTopEnd="4dp"
         app:boxCornerRadiusTopStart="4dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/input_phone_field"
-        app:layout_constraintTop_toBottomOf="@+id/input_field_name">
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toEndOf="@id/edit_phone"
+        app:layout_constraintTop_toBottomOf="@id/edit_name">
 
         <AutoCompleteTextView
-            android:id="@+id/select_input"
+            android:id="@+id/edit_code_input"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/input_field"
+            android:backgroundTint="@color/input_field"
             tools:ignore="LabelFor" />
-
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/input_address_name"
-        android:layout_width="328dp"
-        android:layout_height="54dp"
+        android:id="@+id/edit_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
         android:hint="@string/address"
         app:boxCornerRadiusTopEnd="4dp"
         app:boxCornerRadiusTopStart="4dp"
         app:endIconDrawable="@drawable/ic_location_24"
         app:endIconMode="custom"
-        android:layout_marginTop="26dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_phone_field">
+        app:layout_constraintTop_toBottomOf="@id/edit_phone">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edit_address_input"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/input_field" />
-
+            android:backgroundTint="@color/input_field" />
     </com.google.android.material.textfield.TextInputLayout>
 
-
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/input_city_field"
-        android:layout_width="104dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="25dp"
+        android:id="@+id/edit_city"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="16dp"
         android:hint="@string/city"
         app:boxCornerRadiusTopEnd="4dp"
         app:boxCornerRadiusTopStart="4dp"
+        app:layout_constraintEnd_toStartOf="@id/edit_state"
+        app:layout_constraintHorizontal_weight="3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/select_state_field"
-        app:layout_constraintTop_toBottomOf="@+id/input_address_name">
+        app:layout_constraintTop_toBottomOf="@id/edit_address">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edit_city_field"
+            android:id="@+id/edit_city_input"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/input_field" />
-
+            android:backgroundTint="@color/input_field" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/select_state_field"
+        android:id="@+id/edit_state"
         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
-        android:layout_width="104dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="25dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="16dp"
         android:hint="@string/state"
         app:boxCornerRadiusTopEnd="4dp"
         app:boxCornerRadiusTopStart="4dp"
-        app:layout_constraintEnd_toStartOf="@+id/input_zip"
-        app:layout_constraintStart_toEndOf="@+id/input_city_field"
-        app:layout_constraintTop_toBottomOf="@+id/input_address_name">
+        app:layout_constraintEnd_toStartOf="@id/edit_zip"
+        app:layout_constraintHorizontal_weight="3"
+        app:layout_constraintStart_toEndOf="@id/edit_city"
+        app:layout_constraintTop_toBottomOf="@id/edit_address">
 
         <AutoCompleteTextView
             android:id="@+id/edit_state_input"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/input_field"
+            android:backgroundTint="@color/input_field"
             tools:ignore="LabelFor" />
-
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/input_zip"
-        android:layout_width="88dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="25dp"
+        android:id="@+id/edit_zip"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
         android:hint="@string/zip"
         app:boxCornerRadiusTopEnd="4dp"
         app:boxCornerRadiusTopStart="4dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/select_state_field"
-        app:layout_constraintTop_toBottomOf="@+id/input_address_name">
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toEndOf="@id/edit_state"
+        app:layout_constraintTop_toBottomOf="@id/edit_address">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edit_zip_field"
+            android:id="@+id/edit_zip_input"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/input_field" />
+            android:backgroundTint="@color/input_field" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/input_dob_field"
-        android:layout_width="328dp"
-        android:layout_height="54dp"
+        android:id="@+id/edit_birthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
         android:hint="@string/dob"
         app:boxCornerRadiusTopEnd="4dp"
         app:boxCornerRadiusTopStart="4dp"
         app:endIconDrawable="@drawable/ic_calendar_24"
         app:endIconMode="custom"
-        android:layout_marginTop="26dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/select_state_field">
+        app:layout_constraintTop_toBottomOf="@id/edit_city">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edit_dob_input"
+            android:id="@+id/edit_birthday_input"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/input_field" />
-
+            android:backgroundTint="@color/input_field" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/input_notes_field"
-        android:layout_width="328dp"
-        android:layout_height="54dp"
+        android:id="@+id/edit_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
         android:hint="@string/notes"
         app:boxCornerRadiusTopEnd="4dp"
         app:boxCornerRadiusTopStart="4dp"
         app:endIconDrawable="@drawable/ic_create_24"
         app:endIconMode="custom"
-        android:layout_marginTop="26dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_dob_field">
+        app:layout_constraintTop_toBottomOf="@id/edit_birthday">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edit_note_input"
+            android:id="@+id/edit_notes_input"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/input_field" />
-
+            android:backgroundTint="@color/input_field" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:layout_width="328dp"
-        android:layout_height="40dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:text="@string/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:backgroundTint="@color/secondaryGreen"
-        />
-
-
+        android:text="@string/register"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
