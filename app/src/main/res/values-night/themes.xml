@@ -6,7 +6,7 @@
         <item name="colorPrimaryVariant">@color/god_gray</item>
         <item name="colorOnPrimary">@color/alto</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondary">@color/malibu</item>
         <item name="colorSecondaryVariant">@color/teal_200</item>
         <item name="colorOnSecondary">@color/alto</item>
         <!-- Status bar color. -->
