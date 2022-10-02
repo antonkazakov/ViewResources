@@ -10,10 +10,14 @@
         <item name="colorSecondaryVariant">@color/green_haze</item>
         <item name="colorOnSecondary">@color/outer_space</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-    </style>
+        <item name="android:subtitleTextColor">@color/cinnabar</item>
+        <item name="colorOnSurface">@color/gray</item>
+        <item name="colorSecondHeader">@color/outer_space</item>
+        <item name="colorTextButton">@color/white</item>
 
+    </style>
     <style name="ButtonRoundConnerBlack" parent="Widget.MaterialComponents.Button">
         <item name="backgroundTint">@color/black</item>
     </style>

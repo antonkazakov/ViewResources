@@ -11,8 +11,17 @@
 
     <color name="orient">#FF005489</color>
     <color name="green_haze">#FF009a44</color>
+
+
     <color name="cinnabar">#FFE74C3C</color>
 
+    <!--    night begin-->
+    <color name="god_gray">#FF121212</color>
+    <color name="alto">#FFE0E0E0</color>
+    <color name="gray">#FF888888</color>
+    <color name="kournikova">#FFFFD76F</color>
+    <color name="conifer">#FF89ED5B</color>
+    <!--    night end-->
 
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>

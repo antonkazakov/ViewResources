@@ -2,15 +2,25 @@
     <!-- Base application theme. -->
     <style name="Theme.ViewResources" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorPrimary">@color/god_gray</item>
+        <item name="colorPrimaryVariant">@color/god_gray</item>
+        <item name="colorOnPrimary">@color/alto</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_200</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorOnSecondary">@color/alto</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="android:subtitleTextColor">@color/conifer</item>
+        <item name="colorOnSurface">@color/gray</item>
+        <item name="colorSecondHeader">@color/kournikova</item>
+        <item name="colorTextButton">@color/god_gray</item>
+
+    </style>
+
+
+    <style name="ButtonRoundConnerBlack" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/conifer</item>
     </style>
 </resources>

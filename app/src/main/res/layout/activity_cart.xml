@@ -39,11 +39,11 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/margin_horizontal"
         android:layout_marginTop="16dp"
-        android:hint="@string/in_cart"
-        android:textColor="@color/outer_space"
+        android:text="@string/in_cart"
+        android:textColor="?attr/colorOnSecondary"
         app:layout_constraintEnd_toEndOf="@id/constraintLayout"
         app:layout_constraintStart_toStartOf="@id/constraintLayout"
-        app:layout_constraintTop_toBottomOf="@id/coordinatorLayout"></TextView>
+        app:layout_constraintTop_toBottomOf="@id/coordinatorLayout" />
 
     <ImageView
         android:id="@+id/imageNumber1"
@@ -51,9 +51,10 @@
         android:layout_height="48dp"
         android:layout_marginStart="@dimen/margin_horizontal"
         android:layout_marginTop="56dp"
+        android:contentDescription="@string/item_photo"
         android:src="@drawable/baseline_no_photography_24"
         app:layout_constraintStart_toStartOf="@id/constraintLayout"
-        app:layout_constraintTop_toBottomOf="@id/coordinatorLayout"></ImageView>
+        app:layout_constraintTop_toBottomOf="@id/coordinatorLayout" />
 
     <TextView
         android:id="@+id/text_name_number1"
@@ -61,19 +62,21 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_horizontal"
         android:layout_marginTop="60dp"
-        android:hint="@string/name_number1"
+        android:text="@string/name_number1"
+        android:textColor="?attr/colorOnSecondary"
         app:layout_constraintStart_toEndOf="@id/imageNumber1"
-        app:layout_constraintTop_toBottomOf="@id/coordinatorLayout"></TextView>
+        app:layout_constraintTop_toBottomOf="@id/coordinatorLayout" />
 
     <TextView
         android:id="@+id/text_caption_number1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_horizontal"
-        android:hint="@string/caption_number1"
+        android:text="@string/caption_number1"
+        android:textColor="?attr/colorOnSecondary"
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@id/imageNumber1"
-        app:layout_constraintTop_toBottomOf="@id/text_name_number1"></TextView>
+        app:layout_constraintTop_toBottomOf="@id/text_name_number1" />
 
     <TextView
         android:id="@+id/text_price_number1"
@@ -81,9 +84,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="@dimen/margin_horizontal"
-        android:hint="@string/price_number1"
+        android:text="@string/price_number1"
+        android:textColor="?attr/colorOnSecondary"
         app:layout_constraintEnd_toEndOf="@id/coordinatorLayout"
-        app:layout_constraintTop_toBottomOf="@id/coordinatorLayout"></TextView>
+        app:layout_constraintTop_toBottomOf="@id/coordinatorLayout" />
 
     <ImageView
         android:id="@+id/image_close_number1"
@@ -91,9 +95,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="84dp"
         android:layout_marginEnd="@dimen/margin_horizontal"
+        android:contentDescription="@string/button_close"
         android:src="@drawable/baseline_close_9"
         app:layout_constraintEnd_toEndOf="@id/coordinatorLayout"
-        app:layout_constraintTop_toBottomOf="@id/coordinatorLayout"></ImageView>
+        app:layout_constraintTop_toBottomOf="@id/coordinatorLayout" />
 
     <ImageView
         android:id="@+id/imageNumber2"
@@ -101,9 +106,10 @@
         android:layout_height="48dp"
         android:layout_marginStart="@dimen/margin_horizontal"
         android:layout_marginTop="@dimen/margin_vertical"
+        android:contentDescription="@string/item_photo"
         android:src="@drawable/baseline_no_photography_24"
         app:layout_constraintStart_toStartOf="@id/constraintLayout"
-        app:layout_constraintTop_toBottomOf="@id/imageNumber1"></ImageView>
+        app:layout_constraintTop_toBottomOf="@id/imageNumber1" />
 
     <TextView
         android:id="@+id/text_name_number2"
@@ -111,19 +117,21 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_horizontal"
         android:layout_marginTop="60dp"
-        android:hint="@string/name_number2"
+        android:text="@string/name_number2"
+        android:textColor="?attr/colorOnSecondary"
         app:layout_constraintStart_toEndOf="@id/imageNumber2"
-        app:layout_constraintTop_toBottomOf="@id/text_name_number1"></TextView>
+        app:layout_constraintTop_toBottomOf="@id/text_name_number1" />
 
     <TextView
         android:id="@+id/text_caption_number2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_horizontal"
-        android:hint="@string/caption_number2"
+        android:text="@string/caption_number2"
+        android:textColor="?attr/colorOnSecondary"
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@id/imageNumber2"
-        app:layout_constraintTop_toBottomOf="@id/text_name_number2"></TextView>
+        app:layout_constraintTop_toBottomOf="@id/text_name_number2" />
 
     <TextView
         android:id="@+id/text_price_number2"
@@ -131,18 +139,20 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_vertical"
         android:layout_marginEnd="@dimen/margin_horizontal"
-        android:hint="@string/price_number2"
+        android:text="@string/price_number2"
+        android:textColor="?attr/colorOnSecondary"
         app:layout_constraintEnd_toEndOf="@id/coordinatorLayout"
-        app:layout_constraintTop_toBottomOf="@id/imageNumber1"></TextView>
+        app:layout_constraintTop_toBottomOf="@id/imageNumber1" />
 
     <ImageView
         android:id="@+id/image_close_number2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/margin_horizontal"
+        android:contentDescription="@string/button_close"
         android:src="@drawable/baseline_close_9"
         app:layout_constraintEnd_toEndOf="@id/coordinatorLayout"
-        app:layout_constraintTop_toBottomOf="@id/text_price_number2"></ImageView>
+        app:layout_constraintTop_toBottomOf="@id/text_price_number2" />
 
     <ImageView
         android:id="@+id/imageNumber3"
@@ -150,9 +160,10 @@
         android:layout_height="48dp"
         android:layout_marginStart="@dimen/margin_horizontal"
         android:layout_marginTop="@dimen/margin_vertical"
+        android:contentDescription="@string/item_photo"
         android:src="@drawable/baseline_no_photography_24"
         app:layout_constraintStart_toStartOf="@id/constraintLayout"
-        app:layout_constraintTop_toBottomOf="@id/imageNumber2"></ImageView>
+        app:layout_constraintTop_toBottomOf="@id/imageNumber2" />
 
     <TextView
         android:id="@+id/text_name_number3"
@@ -160,19 +171,21 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_horizontal"
         android:layout_marginTop="60dp"
-        android:hint="@string/name_number3"
+        android:text="@string/name_number3"
+        android:textColor="?attr/colorOnSecondary"
         app:layout_constraintStart_toEndOf="@id/imageNumber3"
-        app:layout_constraintTop_toBottomOf="@id/text_name_number2"></TextView>
+        app:layout_constraintTop_toBottomOf="@id/text_name_number2" />
 
     <TextView
         android:id="@+id/text_caption_number3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_horizontal"
-        android:hint="@string/caption_number3"
+        android:text="@string/caption_number3"
+        android:textColor="?attr/colorOnSecondary"
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@id/imageNumber3"
-        app:layout_constraintTop_toBottomOf="@id/text_name_number3"></TextView>
+        app:layout_constraintTop_toBottomOf="@id/text_name_number3" />
 
     <TextView
         android:id="@+id/text_price_number3"
@@ -180,18 +193,20 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_vertical"
         android:layout_marginEnd="@dimen/margin_horizontal"
-        android:hint="@string/price_number3"
+        android:text="@string/price_number3"
+        android:textColor="?attr/colorOnSecondary"
         app:layout_constraintEnd_toEndOf="@id/coordinatorLayout"
-        app:layout_constraintTop_toBottomOf="@id/imageNumber2"></TextView>
+        app:layout_constraintTop_toBottomOf="@id/imageNumber2" />
 
     <ImageView
         android:id="@+id/image_close_number3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/margin_horizontal"
+        android:contentDescription="@string/button_close"
         android:src="@drawable/baseline_close_9"
         app:layout_constraintEnd_toEndOf="@id/coordinatorLayout"
-        app:layout_constraintTop_toBottomOf="@id/text_price_number3"></ImageView>
+        app:layout_constraintTop_toBottomOf="@id/text_price_number3" />
 
     <ImageView
         android:id="@+id/imageNumber4"
@@ -199,9 +214,10 @@
         android:layout_height="48dp"
         android:layout_marginStart="@dimen/margin_horizontal"
         android:layout_marginTop="@dimen/margin_vertical"
+        android:contentDescription="@string/item_photo"
         android:src="@drawable/baseline_no_photography_24"
         app:layout_constraintStart_toStartOf="@id/constraintLayout"
-        app:layout_constraintTop_toBottomOf="@id/imageNumber3"></ImageView>
+        app:layout_constraintTop_toBottomOf="@id/imageNumber3" />
 
     <TextView
         android:id="@+id/text_name_number4"
@@ -209,19 +225,21 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_horizontal"
         android:layout_marginTop="60dp"
-        android:hint="@string/name_number4"
+        android:text="@string/name_number4"
+        android:textColor="?attr/colorOnSecondary"
         app:layout_constraintStart_toEndOf="@id/imageNumber4"
-        app:layout_constraintTop_toBottomOf="@id/text_name_number3"></TextView>
+        app:layout_constraintTop_toBottomOf="@id/text_name_number3" />
 
     <TextView
         android:id="@+id/text_caption_number4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_horizontal"
-        android:hint="@string/caption_number4"
+        android:text="@string/caption_number4"
+        android:textColor="?attr/colorOnSecondary"
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@id/imageNumber4"
-        app:layout_constraintTop_toBottomOf="@id/text_name_number4"></TextView>
+        app:layout_constraintTop_toBottomOf="@id/text_name_number4" />
 
     <TextView
         android:id="@+id/text_price_number4"
@@ -229,18 +247,20 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_vertical"
         android:layout_marginEnd="@dimen/margin_horizontal"
-        android:hint="@string/price_number4"
+        android:text="@string/price_number4"
+        android:textColor="?attr/colorOnSecondary"
         app:layout_constraintEnd_toEndOf="@id/coordinatorLayout"
-        app:layout_constraintTop_toBottomOf="@id/imageNumber3"></TextView>
+        app:layout_constraintTop_toBottomOf="@id/imageNumber3" />
 
     <ImageView
         android:id="@+id/image_close_number4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/margin_horizontal"
+        android:contentDescription="@string/button_close"
         android:src="@drawable/baseline_close_9"
         app:layout_constraintEnd_toEndOf="@id/coordinatorLayout"
-        app:layout_constraintTop_toBottomOf="@id/text_price_number4"></ImageView>
+        app:layout_constraintTop_toBottomOf="@id/text_price_number4" />
 
     <ImageView
         android:id="@+id/dotted_line"
@@ -248,6 +268,7 @@
         android:layout_height="5dp"
         android:layout_marginHorizontal="@dimen/margin_horizontal"
         android:layout_marginTop="56dp"
+        android:contentDescription="@string/list_end"
         android:src="@drawable/dotted"
         app:layout_constraintStart_toStartOf="@id/constraintLayout"
         app:layout_constraintTop_toBottomOf="@id/imageNumber4" />
@@ -258,21 +279,23 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_horizontal"
         android:layout_marginTop="24dp"
-        android:hint="@string/total"
+        android:text="@string/total"
+        android:textColor="?attr/colorSecondHeader"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/constraintLayout"
-        app:layout_constraintTop_toBottomOf="@id/dotted_line"></TextView>
+        app:layout_constraintTop_toBottomOf="@id/dotted_line" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/margin_horizontal"
-        android:hint="@string/total_number"
+        android:text="@string/total_number"
+        android:textColor="?attr/colorSecondHeader"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@id/constraintLayout"
-        app:layout_constraintTop_toTopOf="@id/text_total"></TextView>
+        app:layout_constraintTop_toTopOf="@id/text_total" />
 
     <TextView
         android:id="@+id/text_subtotal"
@@ -282,7 +305,7 @@
         android:layout_marginTop="72dp"
         android:hint="@string/subtotal"
         app:layout_constraintStart_toStartOf="@id/constraintLayout"
-        app:layout_constraintTop_toBottomOf="@id/dotted_line"></TextView>
+        app:layout_constraintTop_toBottomOf="@id/dotted_line" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -290,7 +313,7 @@
         android:layout_marginEnd="@dimen/margin_horizontal"
         android:hint="@string/subtotal_number"
         app:layout_constraintEnd_toEndOf="@id/constraintLayout"
-        app:layout_constraintTop_toTopOf="@id/text_subtotal"></TextView>
+        app:layout_constraintTop_toTopOf="@id/text_subtotal" />
 
     <TextView
         android:id="@+id/text_shipping"
@@ -300,7 +323,7 @@
         android:layout_marginTop="8dp"
         android:hint="@string/shipping"
         app:layout_constraintStart_toStartOf="@id/constraintLayout"
-        app:layout_constraintTop_toBottomOf="@id/text_subtotal"></TextView>
+        app:layout_constraintTop_toBottomOf="@id/text_subtotal" />
 
     <TextView
         android:id="@+id/text_shipping_number"
@@ -309,7 +332,7 @@
         android:layout_marginEnd="@dimen/margin_horizontal"
         android:hint="@string/shipping_number"
         app:layout_constraintEnd_toEndOf="@id/constraintLayout"
-        app:layout_constraintTop_toTopOf="@id/text_shipping"></TextView>
+        app:layout_constraintTop_toTopOf="@id/text_shipping" />
 
     <TextView
         android:id="@+id/text_tax"
@@ -319,7 +342,7 @@
         android:layout_marginTop="8dp"
         android:hint="@string/tax"
         app:layout_constraintStart_toStartOf="@id/constraintLayout"
-        app:layout_constraintTop_toBottomOf="@id/text_shipping"></TextView>
+        app:layout_constraintTop_toBottomOf="@id/text_shipping" />
 
     <TextView
         android:id="@+id/text_tax_number"
@@ -328,7 +351,7 @@
         android:layout_marginEnd="@dimen/margin_horizontal"
         android:hint="@string/tax_number"
         app:layout_constraintEnd_toEndOf="@id/constraintLayout"
-        app:layout_constraintTop_toTopOf="@id/text_tax"></TextView>
+        app:layout_constraintTop_toTopOf="@id/text_tax" />
 
     <com.google.android.material.button.MaterialButton
         style="@style/ButtonRoundConnerBlack"
@@ -337,9 +360,11 @@
         android:layout_marginBottom="@dimen/margin_horizontal"
         android:background="@drawable/btn_rounded_corner"
         android:text="@string/pay_now"
+        android:textColor="?attr/colorTextButton"
+        app:iconTint="?attr/colorTextButton"
+        app:icon="@drawable/baseline_account_balance_wallet_24"
         app:layout_constraintBottom_toBottomOf="@id/constraintLayout"
         app:layout_constraintEnd_toEndOf="@id/constraintLayout"
-        app:layout_constraintStart_toStartOf="@id/constraintLayout"
-        app:icon="@drawable/baseline_account_balance_wallet_24"></com.google.android.material.button.MaterialButton>
+        app:layout_constraintStart_toStartOf="@id/constraintLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

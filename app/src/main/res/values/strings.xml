@@ -47,6 +47,9 @@
     <string name="tax">Tax</string>
     <string name="tax_number">3.50</string>
     <string name="pay_now">Pay now</string>
+    <string name="item_photo">item photo</string>
+    <string name="button_close">button close</string>
+    <string name="list_end">end of the list cart</string>
 <!--    Cart end-->
 
 <!--    Sign in begin-->
