@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_cancel">#E74C3C</color>
+    <color name="colorPrimary">#2980B9</color>
+    <color name="colorPrimaryVariant">#2980B9</color>
+    <color name="colorOnPrimary">#FFFFFFFF</color>
+    <color name="colorSecondary">#38C05D</color>
+    <color name="colorSecondaryVariant">#38C05D</color>
+    <color name="colorOnSecondary">#FF000000</color>
+</resources>
