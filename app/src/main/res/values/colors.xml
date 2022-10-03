@@ -35,5 +35,6 @@
     <color name="dialogRegister_textColorAll_darkTheme">#E0E0E0</color>
     <color name="dialogRegister_textColorButton">#4FB8FF</color>
     <color name="dialogRegister_buttonDownText">#121212</color>
+    <color name="dialogRegister_resertPassword_darkTheme">#E0E0E0</color>
 
 </resources>
