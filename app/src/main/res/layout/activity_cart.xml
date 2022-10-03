@@ -47,6 +47,7 @@
 
     <ListView
         android:id="@+id/list_userOrder"
+        android:divider="@null"
         android:layout_width="0dp"
         android:layout_height="300dp"
         android:layout_marginTop="8dp"
