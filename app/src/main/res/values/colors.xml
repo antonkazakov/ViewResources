@@ -11,4 +11,5 @@
     <color name="contact_input">#F0F0F0</color>
     <color name="register">#2ECC71</color>
     <color name="color_contacts">#263238</color>
+    <color name="pay_button_cash">#979797</color>
 </resources>
