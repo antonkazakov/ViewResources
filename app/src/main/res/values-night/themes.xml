@@ -23,6 +23,7 @@
         <item name="textInputStyle">@style/myTextInput</item>
     </style>
     <style name="myToolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="android:lineHeight" tools:targetApi="p">28sp</item>
         <item name="font">@font/roboto_regular</item>
         <item name="android:titleTextAppearance">@style/contact_toolbar</item>
         <item name="android:gravity">center_vertical</item>
@@ -34,6 +35,7 @@
     </style>
 
     <style name="myTextInput" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="android:lineHeight" tools:targetApi="p">28sp</item>
         <item name="font">@font/roboto_regular</item>
         <item name="boxBackgroundColor">@color/contacts_allfields_darkTheme</item>
         <item name="endIconTint">@color/icon_contacts</item>
@@ -43,6 +45,7 @@
         <item name="boxStrokeColor">@color/contacts_allfields_darkTheme</item>
     </style>
     <style name="myTextExposedDropdownMenu" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
+        <item name="android:lineHeight" tools:targetApi="p">28sp</item>
         <item name="boxBackgroundColor">@color/contacts_allfields_darkTheme</item>
         <item name="hintTextColor">@color/contacts_textColorAll_darkTheme</item>
         <item name="textFillColor">@color/contacts_textColorAll_darkTheme</item>
@@ -51,6 +54,7 @@
         <item name="boxStrokeColor">@color/contacts_allfields_darkTheme</item>
     </style>
     <style name="myButtonStyle" parent="Widget.MaterialComponents.Button.Icon">
+        <item name="android:lineHeight" tools:targetApi="p">16sp</item>
         <item name="backgroundTint">@color/contacts_buttonReg_darkTheme</item>
         <item name="android:textColor">@color/contacts_toolbarBack_darkTheme</item>
     </style>
@@ -87,13 +91,13 @@
         <item name="helperTextTextAppearance">@style/dialog_helptext</item>
     </style>
     <style name="myDialog_resetPassword" parent="myDialogStyle">
-        <item name="android:textColor">@color/dialogRegister_textColorButton</item>
+        <item name="android:textColor">@color/dialogRegister_resertPassword_darkTheme</item>
     </style>
     <style name="myDialog_buttonDown" parent="Widget.MaterialComponents.Button.Icon">
         <item name="android:textColor">@color/dialogRegister_buttonDownText</item>
         <item name="backgroundTint">@color/dialogRegister_textColorButton</item>
     </style>
     <style name="myDialog_buttonRegister" parent="Widget.MaterialComponents.Button.OutlinedButton">
-        <item name="android:textColor">@color/dialogRegister_textColorAll_darkTheme</item>
+        <item name="android:textColor">@color/dialogRegister_textColorButton</item>
     </style>
 </resources>
