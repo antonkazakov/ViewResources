@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ButtonTextPrimary" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textColor">@color/colorTextBtnPrimary</item>
+    </style>
+
+    <style name="ButtonAdditional" parent="Widget.Material3.Button.Icon">
+        <item name="backgroundTint">@color/colorBtnAdditional</item>
+    </style>
+
+    <style name="ButtonSecondary">
+        <item name="backgroundTint">@color/colorBtnSecondary</item>
+    </style>
+</resources>

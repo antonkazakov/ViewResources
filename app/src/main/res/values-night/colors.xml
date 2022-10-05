@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="color_cancel">#E74C3C</color>
-    <color name="colorPrimary">#2980B9</color>
-    <color name="colorPrimaryVariant">#2980B9</color>
-    <color name="colorOnPrimary">#FFFFFFFF</color>
-    <color name="colorSecondary">#38C05D</color>
-    <color name="colorSecondaryVariant">#38C05D</color>
+    <color name="colorPrimary">#4FB8FF</color>
+    <color name="colorPrimaryVariant">#4FB8FF</color>
+    <color name="colorOnPrimary">#FF000000</color>
+    <color name="colorSecondary">#89ED5B</color>
+    <color name="colorSecondaryVariant">#89ED5B</color>
     <color name="colorOnSecondary">#FF000000</color>
+    <color name="color_background">#121212</color>
+    <color name="colorBtnSecondary">@color/colorPrimary</color>
+    <color name="colorBtnAdditional">@color/colorSecondary</color>
+    <color name="colorTextBtnPrimary">@color/colorOnBackground</color>
+    <color name="colorOnBackground">#E0E0E0</color>
+
 </resources>

@@ -96,7 +96,7 @@
 
     <Button
         android:id="@+id/btn_pay"
-        style="@style/Widget.Material3.Button.Icon"
+        style="@style/ButtonAdditional"
         app:icon="@drawable/ic_baseline_account_balance_wallet_24"
         android:layout_width="154dp"
         android:layout_height="wrap_content"

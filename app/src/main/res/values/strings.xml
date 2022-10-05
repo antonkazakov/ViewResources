@@ -14,6 +14,7 @@
     <string name="hint_email">Email</string>
     <string name="hint_password">Password</string>
     <string name="btn_signIn">Sign in</string>
+    <string name="label_signIn">Sign in</string>
     <string name="btn_resetMyPass">Reset my password</string>
     <string name="menu_tag_heart">Tag heart</string>
     <string name="items_in_your_cart">%d items in your cart</string>
