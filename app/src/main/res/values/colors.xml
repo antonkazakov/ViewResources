@@ -10,4 +10,7 @@
     <color name="green">#2ECC71</color>
     <color name="white_gray">#F0F0F0</color>
     <color name="blue">#2980B9</color>
+    <color name="black_gray">#263238</color>
+    <color name="icon_button_color">#979797</color>
+    <color name="close_red">#E74C3C</color>
 </resources>

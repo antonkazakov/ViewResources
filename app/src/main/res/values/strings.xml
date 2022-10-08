@@ -13,4 +13,19 @@
     <string name="contacts_state">State</string>
     <string name="search">Search</string>
     <string name="settings">Settings</string>
+    <string name="count_items">4 items in your cart</string>
+    <string name="cart_tittle_1">On the top</string>
+    <string name="cart_price_1">$US, 1.50</string>
+    <string name="cart_caption">Caption</string>
+    <string name="cart_tittle_2">Forever Friends</string>
+    <string name="cart_price_2">$US, 4.50</string>
+    <string name="cart_tittle_3">Prototyping Kit</string>
+    <string name="cart_price_3">$US, 8.00</string>
+    <string name="cart_tittle_4">Basket &amp; Coffee</string>
+    <string name="cart_price_4">$US, 22.00</string>
+    <string name="cart_order_tittle">Your order total</string>
+    <string name="cart_total_price">41.24</string>
+    <string name="cart_more_price">36.00\n2.00\n3.50</string>
+    <string name="cart_more_tittles">Subtotal\nShipping\nTax</string>
+    <string name="cart_pay_now">Pay now</string>
 </resources>
