@@ -29,7 +29,8 @@
             app:layout_anchorGravity="center"
             app:menu="@menu/top_cart_bar"
             app:navigationIcon="@drawable/baseline_arrow_back_24"
-            app:title="@string/cart" />
+            app:title="@string/cart"
+            app:titleTextColor="?attr/colorTitle"/>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
@@ -40,7 +41,7 @@
         android:layout_marginHorizontal="@dimen/margin_horizontal"
         android:layout_marginTop="16dp"
         android:text="@string/in_cart"
-        android:textColor="?attr/colorOnSecondary"
+        android:textColor="?attr/colorThirdHeader"
         app:layout_constraintEnd_toEndOf="@id/constraintLayout"
         app:layout_constraintStart_toStartOf="@id/constraintLayout"
         app:layout_constraintTop_toBottomOf="@id/coordinatorLayout" />
@@ -52,7 +53,7 @@
         android:layout_marginStart="@dimen/margin_horizontal"
         android:layout_marginTop="56dp"
         android:contentDescription="@string/item_photo"
-        android:src="@drawable/baseline_no_photography_24"
+        android:src="@drawable/cake"
         app:layout_constraintStart_toStartOf="@id/constraintLayout"
         app:layout_constraintTop_toBottomOf="@id/coordinatorLayout" />
 
@@ -107,7 +108,7 @@
         android:layout_marginStart="@dimen/margin_horizontal"
         android:layout_marginTop="@dimen/margin_vertical"
         android:contentDescription="@string/item_photo"
-        android:src="@drawable/baseline_no_photography_24"
+        android:src="@drawable/gramm"
         app:layout_constraintStart_toStartOf="@id/constraintLayout"
         app:layout_constraintTop_toBottomOf="@id/imageNumber1" />
 
@@ -161,7 +162,7 @@
         android:layout_marginStart="@dimen/margin_horizontal"
         android:layout_marginTop="@dimen/margin_vertical"
         android:contentDescription="@string/item_photo"
-        android:src="@drawable/baseline_no_photography_24"
+        android:src="@drawable/clock"
         app:layout_constraintStart_toStartOf="@id/constraintLayout"
         app:layout_constraintTop_toBottomOf="@id/imageNumber2" />
 
@@ -215,7 +216,7 @@
         android:layout_marginStart="@dimen/margin_horizontal"
         android:layout_marginTop="@dimen/margin_vertical"
         android:contentDescription="@string/item_photo"
-        android:src="@drawable/baseline_no_photography_24"
+        android:src="@drawable/cactus"
         app:layout_constraintStart_toStartOf="@id/constraintLayout"
         app:layout_constraintTop_toBottomOf="@id/imageNumber3" />
 

@@ -2,4 +2,10 @@
 <resources>
     <attr name="colorSecondHeader" format="color|reference" />
     <attr name="colorTextButton" format="color|reference" />
+    <attr name="colorFirstHeader" format="color|reference" />
+    <attr name="colorIcon" format="color|reference" />
+    <attr name="colorThirdHeader" format="color|reference" />
+    <attr name="colorContainerButton" format="color|reference" />
+    <attr name="colorLabel" format="color|reference" />
+    <attr name="colorTitle" format="color|reference" />
 </resources>

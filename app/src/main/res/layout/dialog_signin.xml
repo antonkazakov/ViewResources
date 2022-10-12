@@ -12,10 +12,11 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="18dp"
         android:text="@string/sigh_in"
+        android:textColor="?attr/colorOnSecondary"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/constraintLayout"
-        app:layout_constraintTop_toTopOf="@id/constraintLayout"></TextView>
+        app:layout_constraintTop_toTopOf="@id/constraintLayout" />
 
     <TextView
         android:id="@+id/textView_register"
@@ -24,11 +25,11 @@
         android:layout_marginTop="18dp"
         android:layout_marginEnd="20dp"
         android:text="@string/register_sigh_in"
-        android:textColor="?attr/colorPrimary"
+        android:textColor="?attr/colorFirstHeader"
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@id/constraintLayout"
-        app:layout_constraintTop_toTopOf="@id/constraintLayout"></TextView>
+        app:layout_constraintTop_toTopOf="@id/constraintLayout" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/filledTextField_email"
@@ -38,6 +39,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="72dp"
         android:layout_marginEnd="24dp"
+        android:textColorHint="?attr/colorLabel"
         android:hint="@string/email"
         app:hintAnimationEnabled="true"
         app:layout_constraintEnd_toEndOf="@id/constraintLayout"
@@ -50,6 +52,7 @@
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
             android:text="@string/email_default"
+            android:textColor="?attr/colorOnSecondary"
             android:textSize="16sp" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -62,6 +65,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="144dp"
         android:layout_marginEnd="24dp"
+        android:textColorHint="?attr/colorLabel"
         android:hint="@string/password"
         app:hintAnimationEnabled="true"
         app:layout_constraintEnd_toEndOf="@id/constraintLayout"
@@ -90,6 +94,8 @@
         app:layout_constraintTop_toTopOf="@id/constraintLayout" />
 
     <Button
+        android:backgroundTint="?attr/colorContainerButton"
+        android:textColor="?attr/colorTextButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="256dp"
