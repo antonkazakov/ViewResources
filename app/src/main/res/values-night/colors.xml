@@ -13,4 +13,8 @@
     <color name="colorTextBtnPrimary">@color/colorOnBackground</color>
     <color name="colorOnBackground">#E0E0E0</color>
     <color name="colorOnBtnBackground">#888888</color>
+    <color name="colorTotalItems">#89ED5B</color>
+    <color name="colorTotalOrder">#FFD76F</color>
+
+
 </resources>

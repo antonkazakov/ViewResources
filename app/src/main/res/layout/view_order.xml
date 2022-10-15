@@ -12,6 +12,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:text="@string/price_header"
+        android:textColor="@color/colorTotalOrder"
         android:textAppearance="@style/TextAppearance.VR.Headline6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,6 +24,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
         android:text="41.24"
+        android:textColor="@color/colorTotalOrder"
         android:textAppearance="@style/TextAppearance.VR.Headline6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
