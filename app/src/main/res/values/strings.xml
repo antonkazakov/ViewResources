@@ -22,4 +22,10 @@
     <string name="price_subTitle">Shipping</string>
     <string name="price_tax">Tax</string>
     <string name="price_header">Your order total</string>
+    <string name="pay">Pay now</string>
+    <string name="signIn">show sign in dialog</string>
+    <string name="openContacts">open contacts</string>
+    <string name="openCart">open contacts</string>
+
 </resources>
+
