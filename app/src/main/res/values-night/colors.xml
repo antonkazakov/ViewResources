@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="color_cancel">#E74C3C</color>
+    <color name="color_cancel">#888888</color>
     <color name="colorPrimary">#4FB8FF</color>
     <color name="colorPrimaryVariant">#4FB8FF</color>
     <color name="colorOnPrimary">#FF000000</color>
@@ -12,5 +12,5 @@
     <color name="colorBtnAdditional">@color/colorSecondary</color>
     <color name="colorTextBtnPrimary">@color/colorOnBackground</color>
     <color name="colorOnBackground">#E0E0E0</color>
-
+    <color name="colorOnBtnBackground">#888888</color>
 </resources>

@@ -13,4 +13,5 @@
     <color name="colorBtnAdditional">#263238</color>
     <color name="colorTextBtnPrimary">@color/colorPrimary</color>
     <color name="colorOnBackground">#263238</color>
+    <color name="colorOnBtnBackground">#FFFFFF</color>
 </resources>
