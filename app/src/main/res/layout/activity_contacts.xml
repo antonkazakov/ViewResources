@@ -61,7 +61,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/select"
-            android:inputType="none" />
+            android:inputType="none"
+            android:textColorHint="#616161" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -85,11 +86,12 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/cityTextField"
-        android:layout_width="120dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:hint="@string/city"
-        android:paddingStart="16dp"
         android:paddingTop="26dp"
+        app:layout_constraintEnd_toStartOf="@id/stateSelect"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/addressTextField"
         tools:ignore="RtlSymmetry">
@@ -102,9 +104,11 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/stateSelect"
         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
-        android:layout_width="120dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:paddingTop="26dp"
+
         app:layout_constraintEnd_toStartOf="@id/zipTextField"
         app:layout_constraintStart_toEndOf="@id/cityTextField"
         app:layout_constraintTop_toBottomOf="@id/addressTextField">
@@ -119,9 +123,10 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/zipTextField"
-        android:layout_width="103dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:hint="@string/zip"
         android:paddingTop="26dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -174,6 +179,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
+
         android:id="@+id/registerButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -181,7 +187,10 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:backgroundTint="@color/green"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
         android:text="@string/register"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

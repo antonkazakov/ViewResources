@@ -13,7 +13,11 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
         android:text="@string/_4_items_in_your_cart"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/fixBikeItem"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -64,6 +68,7 @@
         android:layout_height="5dp"
         android:layout_marginTop="52dp"
         android:src="@drawable/dotted"
+        app:layout_constraintBottom_toTopOf="@id/orderTotalTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/kickScooterItem"
@@ -71,22 +76,26 @@
 
     <TextView
         android:id="@+id/orderTotalTextView"
-        android:layout_width="248dp"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:text="@string/your_order_total"
+        android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/amountTextView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/dottedImageView" />
 
     <TextView
         android:id="@+id/amountTextView"
         android:layout_width="72dp"
-        android:layout_height="wrap_content"
+        android:layout_height="32dp"
         android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
         android:gravity="right"
+        android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -97,11 +106,14 @@
 
     <TextView
         android:id="@+id/orderDetailTextView"
-        android:layout_width="248dp"
+        android:layout_width="0dp"
         android:layout_height="72dp"
         android:layout_marginStart="16sp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/black"
         android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/orderCountTextView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/orderTotalTextView"
         tools:text="TEXT" />
@@ -110,32 +122,36 @@
         android:id="@+id/orderCountTextView"
         android:layout_width="72dp"
         android:layout_height="72dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
         android:gravity="right"
+        android:textColor="@color/black"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/orderDetailTextView"
-        app:layout_constraintTop_toTopOf="@id/orderDetailTextView"
+        app:layout_constraintEnd_toEndOf="@+id/amountTextView"
+
+        app:layout_constraintTop_toBottomOf="@+id/amountTextView"
         tools:ignore="RtlHardcoded"
         tools:text="096.24" />
 
     <com.google.android.material.button.MaterialButton
-        android:layout_width="154dp"
-        android:layout_height="56dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:layout_marginBottom="16dp"
         android:backgroundTint="@color/gray"
-        android:fontFamily="sans-serif-medium"
+        android:paddingTop="14dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="14dp"
         android:text="@string/pay_now"
         android:textAllCaps="false"
         android:textSize="20sp"
         app:cornerRadius="999dp"
         app:icon="@drawable/ic_wallet"
+        app:iconPadding="11dp"
         app:iconTint="@color/light_gray"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/orderDetailTextView" />
+        tools:ignore="RtlSymmetry" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

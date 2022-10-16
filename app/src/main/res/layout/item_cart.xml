@@ -13,56 +13,59 @@
         android:layout_marginTop="12dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/ic_tag_heart"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription,ImageContrastCheck"
+        tools:src="@drawable/ic_tag_heart" />
 
     <TextView
         android:id="@+id/itemProductNameTW"
-        android:layout_width="189dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/black"
         android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/itemPrice"
         app:layout_constraintStart_toEndOf="@id/itemImageView"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="TeST" />
 
     <TextView
         android:id="@+id/itemCaption"
-        android:layout_width="240dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:layout_marginEnd="11.33dp"
         android:text="@string/caption"
+        android:textColor="@color/black"
         android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/itemCancel"
         app:layout_constraintStart_toEndOf="@id/itemImageView"
         app:layout_constraintTop_toBottomOf="@id/itemProductNameTW" />
 
     <TextView
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginEnd="16dp"
-        android:gravity="right"
         android:id="@+id/itemPrice"
         android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="right"
+        android:textColor="@color/black"
         android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/itemProductNameTW"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="$US"
-        tools:ignore="RtlHardcoded" />
+        tools:ignore="RtlHardcoded"
+        tools:text="$US" />
 
     <ImageButton
         android:id="@+id/itemCancel"
-        android:layout_width="10dp"
-        android:layout_height="10dp"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="3dp"
+        android:layout_width="9.33dp"
+        android:layout_height="9.33dp"
+        android:layout_marginTop="3.33dp"
         android:src="@drawable/ic_close"
         app:layout_constraintEnd_toEndOf="@id/itemPrice"
         app:layout_constraintTop_toBottomOf="@id/itemPrice"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
