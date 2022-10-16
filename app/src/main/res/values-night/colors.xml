@@ -13,10 +13,9 @@
     <color name="black_gray">#263238</color>
     <color name="icon_button_color">#979797</color>
     <color name="close_red">#E74C3C</color>
-    <color name="textPrimary">#263238</color>
-    <color name="iconPrimary">#979797</color>
-    <color name="textBackgroundPrimary">#F0F0F0</color>
-    <color name="buttonColor">#2ECC71</color>
-    <color name="buttonTextColor">#FFFFFF</color>
-    <color name="iconBarColor">#FFFFFF</color>
+    <color name="textPrimary">#E0E0E0</color>
+    <color name="iconPrimary">#888888</color>
+    <color name="textBackgroundPrimary">#272727</color>
+    <color name="buttonColor">#4FB8FF</color>
+    <color name="buttonTextColor">#121212</color>
 </resources>

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -14,10 +13,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:hint="@string/contacts_name"
+        android:textColorHint="@color/textPrimary"
         app:boxCornerRadiusTopEnd="4dp"
         app:boxCornerRadiusTopStart="4dp"
         app:endIconDrawable="@drawable/ic_account"
         app:endIconMode="custom"
+        app:endIconTint="@color/iconPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -26,7 +27,7 @@
             android:id="@+id/edit_name"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:backgroundTint="@color/white_gray" />
+            android:backgroundTint="@color/textBackgroundPrimary" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -36,10 +37,12 @@
         android:layout_marginTop="25dp"
         android:layout_marginEnd="16dp"
         android:hint="@string/contacts_phone_number"
+        android:textColorHint="@color/textPrimary"
         app:boxCornerRadiusTopEnd="4dp"
         app:boxCornerRadiusTopStart="4dp"
         app:endIconDrawable="@drawable/ic_phone"
         app:endIconMode="custom"
+        app:endIconTint="@color/iconPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/contacts_menu"
         app:layout_constraintHorizontal_weight="5"
@@ -50,7 +53,7 @@
             android:id="@+id/edit_phone_number"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:backgroundTint="@color/white_gray" />
+            android:backgroundTint="@color/textBackgroundPrimary" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -60,6 +63,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:hint="@string/contacts_select"
+        android:textColorHint="@color/textPrimary"
         app:boxCornerRadiusTopEnd="4dp"
         app:boxCornerRadiusTopStart="4dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -70,7 +74,7 @@
         <AutoCompleteTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/white_gray"
+            android:backgroundTint="@color/textBackgroundPrimary"
             android:inputType="none" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -81,10 +85,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:hint="@string/contacts_address"
+        android:textColorHint="@color/textPrimary"
         app:boxCornerRadiusTopEnd="4dp"
         app:boxCornerRadiusTopStart="4dp"
         app:endIconDrawable="@drawable/ic_map_marker"
         app:endIconMode="custom"
+        app:endIconTint="@color/iconPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/contacts_phone_number">
@@ -93,8 +99,7 @@
             android:id="@+id/edit_address"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:backgroundTint="@color/white_gray"
-            android:textColorHint="#546E7A" />
+            android:backgroundTint="@color/textBackgroundPrimary"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -103,6 +108,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:hint="@string/contacts_city"
+        android:textColorHint="@color/textPrimary"
         app:boxCornerRadiusTopEnd="4dp"
         app:boxCornerRadiusTopStart="4dp"
         app:layout_constraintEnd_toStartOf="@+id/contacts_state"
@@ -115,7 +121,7 @@
             android:id="@+id/edit_city"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:backgroundTint="@color/white_gray" />
+            android:backgroundTint="@color/textBackgroundPrimary" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -126,6 +132,7 @@
         android:layout_marginTop="25dp"
         android:layout_marginHorizontal="16dp"
         android:hint="@string/contacts_state"
+        android:textColorHint="@color/textPrimary"
         app:boxCornerRadiusTopEnd="4dp"
         app:boxCornerRadiusTopStart="4dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -138,7 +145,7 @@
         <AutoCompleteTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/white_gray"
+            android:backgroundTint="@color/textBackgroundPrimary"
             android:inputType="none" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -148,6 +155,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:hint="@string/contacts_zip"
+        android:textColorHint="@color/textPrimary"
         app:boxCornerRadiusTopEnd="4dp"
         app:boxCornerRadiusTopStart="4dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -160,7 +168,7 @@
             android:id="@+id/edit_zip"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:backgroundTint="@color/white_gray" />
+            android:backgroundTint="@color/textBackgroundPrimary" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -168,11 +176,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/contacts_birthday"
+        android:textColorHint="@color/textPrimary"
         android:layout_marginTop="25dp"
         app:boxCornerRadiusTopEnd="4dp"
         app:boxCornerRadiusTopStart="4dp"
         app:endIconDrawable="@drawable/ic_calendar"
         app:endIconMode="custom"
+        app:endIconTint="@color/iconPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/contacts_state">
@@ -181,7 +191,7 @@
             android:id="@+id/edit_birthday"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:backgroundTint="@color/white_gray" />
+            android:backgroundTint="@color/textBackgroundPrimary" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -190,10 +200,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:hint="@string/contacts_notes"
+        android:textColorHint="@color/textPrimary"
         app:boxCornerRadiusTopEnd="4dp"
         app:boxCornerRadiusTopStart="4dp"
         app:endIconDrawable="@drawable/ic_pencil"
         app:endIconMode="custom"
+        app:endIconTint="@color/iconPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/contacts_birthday">
@@ -202,15 +214,16 @@
             android:id="@+id/edit_notes"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:backgroundTint="@color/white_gray" />
+            android:backgroundTint="@color/textBackgroundPrimary" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/contacts_register_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/green"
+        android:backgroundTint="@color/buttonColor"
         android:text="@string/register_button_text"
+        android:textColorHint="@color/buttonTextColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
