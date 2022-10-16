@@ -10,13 +10,26 @@
     <color name="green">#2ECC71</color>
     <color name="white_gray">#F0F0F0</color>
     <color name="blue">#2980B9</color>
-    <color name="black_gray">#263238</color>
+
+    <color name="background_sign_in_color">#FFFFFF</color>
+
+    <color name="text_primary">#263238</color>
+    <color name="text_background_primary">#F0F0F0</color>
+    <color name="text_items_color">#263238</color>
+    <color name="text_order_color">#263238</color>
+    <color name="text_button_pay_color">#FFFFFF</color>
+    <color name="text_register_color">#2980B9</color>
+    <color name="text_reset_color">#2980B9</color>
+
     <color name="icon_button_color">#979797</color>
-    <color name="close_red">#E74C3C</color>
-    <color name="textPrimary">#263238</color>
-    <color name="iconPrimary">#979797</color>
-    <color name="textBackgroundPrimary">#F0F0F0</color>
-    <color name="buttonColor">#2ECC71</color>
-    <color name="buttonTextColor">#FFFFFF</color>
-    <color name="iconBarColor">#FFFFFF</color>
+    <color name="icon_close_color">#E74C3C</color>
+    <color name="icon_primary">#979797</color>
+    <color name="icon_bar_color">#FFFFFF</color>
+    <color name="icon_wallet_color">#979797</color>
+
+    <color name="button_color_green">#2ECC71</color>
+    <color name="button_color_blue">#2980B9</color>
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="button_pay_color">#263238</color>
+
 </resources>
