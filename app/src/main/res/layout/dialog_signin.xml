@@ -6,6 +6,7 @@
 
     <TextView
         android:id="@+id/singInTextView"
+        style="@style/MainColorTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -13,7 +14,6 @@
         android:layout_marginEnd="12dp"
         android:layout_marginBottom="18dp"
         android:text="@string/sing_in"
-        android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@id/emailTextField"
@@ -37,15 +37,13 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/emailTextField"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        style="@style/TextInputLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="35dp"
         android:hint="@string/e_mail"
-        app:boxStrokeColor="@color/light_gray"
-        app:hintTextColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/singInTextView">
@@ -59,15 +57,13 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/passwordTextField"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        style="@style/TextInputLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="35dp"
         android:hint="@string/password"
-        app:boxStrokeColor="@color/light_gray"
-        app:hintTextColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/emailTextField">
@@ -81,7 +77,7 @@
 
     <Button
         android:id="@+id/resetButton"
-        style="@style/Widget.MaterialComponents.Button.TextButton"
+        style="@style/ResetPassButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
