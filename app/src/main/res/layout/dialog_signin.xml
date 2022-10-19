@@ -11,8 +11,10 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="18dp"
         android:gravity="center_vertical"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="20sp"
         android:text="@string/loginTitle"
-        android:textColor="@color/black"
+        android:textColor="@color/sign_in_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -28,7 +30,7 @@
         android:layout_marginEnd="20dp"
         android:gravity="center_horizontal|center_vertical"
         android:text="@string/register"
-        android:textColor="@color/myBlue"
+        android:textColor="@color/sign_in_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -87,7 +89,7 @@
         android:layout_marginStart="24dp"
         android:gravity="end|center_vertical"
         android:text="@string/resetPassword"
-        android:textColor="@color/myBlue"
+        android:textColor="@color/sign_in_color"
         android:textSize="11sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -108,7 +110,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:backgroundTint="@color/myBlue" />
+        app:backgroundTint="@color/sign_in_color" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

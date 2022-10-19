@@ -4,13 +4,13 @@
 
     <item
         android:id="@+id/search"
-        android:icon="@drawable/magnify_24dp"
+        android:icon="@drawable/magnify"
         android:title="@string/search_description"
         app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/dots"
-        android:icon="@drawable/dots_vertical_24dp"
+        android:icon="@drawable/dots_vertical"
         android:title="@string/dots_menu_description"
         app:showAsAction="ifRoom" />
 

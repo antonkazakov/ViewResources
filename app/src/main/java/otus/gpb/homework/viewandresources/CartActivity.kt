@@ -63,7 +63,7 @@ class CartActivity : AppCompatActivity() {
         cancelParams.horizontalBias = 1.0f
         cancelParams.verticalBias = 1.0f
         cancelView.layoutParams = cancelParams
-        cancelView.setImageDrawable(resources.getDrawable(R.drawable.cancel_24dp))
+        cancelView.setImageDrawable(resources.getDrawable(R.drawable.close_icon))
 
         val priceView = TextView(this)
         priceView.typeface = Typeface.DEFAULT_BOLD
