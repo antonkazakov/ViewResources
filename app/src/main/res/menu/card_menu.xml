@@ -7,6 +7,5 @@
         android:id="@+id/app_bar_search"
         android:icon="@drawable/ic_tag_heart_outline"
         android:title="Favs"
-        app:iconTint="@color/white"
         app:showAsAction="ifRoom" />
 </menu>

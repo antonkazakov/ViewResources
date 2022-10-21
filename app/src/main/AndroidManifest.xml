@@ -22,7 +22,8 @@
             android:name=".ContactsActivity"
             android:exported="false"
             android:label="Contacts"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.ViewResources1"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

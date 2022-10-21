@@ -2,7 +2,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="280dp"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@color/background_color">
 
     <TextView
         android:id="@+id/text_sign"
@@ -11,7 +12,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="18dp"
         android:text="@string/dialog_sign_in"
-        android:textColor="@color/dark_main"
+        android:textColor="@color/main_color"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
         android:text="@string/dialog_register"
-        android:textColor="@color/sign_main"
+        android:textColor="@color/primary_color"
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@id/text_sign"
@@ -39,6 +40,8 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
         android:hint="@string/dialog_e_mail"
+        android:textColor="@color/main_color"
+        android:textColorHint="@color/main_color"
         app:boxCornerRadiusTopEnd="4dp"
         app:boxCornerRadiusTopStart="4dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,6 +63,8 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="24dp"
         android:hint="@string/dialog_password"
+        android:textColor="@color/main_color"
+        android:textColorHint="@color/main_color"
         app:boxCornerRadiusTopEnd="4dp"
         app:boxCornerRadiusTopStart="4dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -79,7 +84,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/dialog_reset_my_password"
-        android:textColor="@color/sign_main"
+        android:textColor="@color/dialog_reset"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="@id/edit_pass"
         app:layout_constraintTop_toBottomOf="@id/edit_pass" />
@@ -91,7 +96,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="16dp"
-        android:backgroundTint="@color/sign_main"
+        android:backgroundTint="@color/primary_color"
         android:text="@string/dialog_sign_in"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -4,13 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    style="@style/ActionBarSecond">
 
     <Button
         android:id="@+id/cart_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="open cart"
+        android:backgroundTint="@color/contacts_button"
+        android:text="@string/open_cart"
+        android:textColor="@color/background_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,7 +23,9 @@
         android:id="@+id/signin_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="show sign in dialog"
+        android:backgroundTint="@color/contacts_button"
+        android:text="@string/show_sign_in_dialog"
+        android:textColor="@color/background_color"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cart_button" />
@@ -29,7 +34,9 @@
         android:id="@+id/contacts_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="open contacts"
+        android:backgroundTint="@color/contacts_button"
+        android:text="@string/open_contacts"
+        android:textColor="@color/background_color"
         app:layout_constraintBottom_toTopOf="@+id/cart_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

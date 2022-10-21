@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">@color/primary_color</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="primary_color">#4FB8FF</color>
+    <color name="background_color">#121212</color>
+    <color name="main_color">#E0E0E0</color>
+    <color name="secondary_color">#89ED5B</color>
+    <color name="accent_color">#E74C3C</color>
+    <color name="icons_color">#888888</color>
+    <color name="tretiary_color">#FFD76F</color>
+    <color name="shade_color">#272727</color>
+
+    <color name="contacts_button">@color/primary_color</color>
+    <color name="cart_cancel_button">@color/icons_color</color>
+    <color name="dialog_reset">@color/main_color</color>
+    <color name="bar_icon_color">@color/icons_color</color>
+
+
+    <color name="button_contacts_register">#4FB8FF</color>
+    <color name="button_contacts_register_text">#121212</color>
+    <color name="status_bar">#121212</color>
+    <color name="action_bar">#272727</color>
+    <color name="cart_count_items">#89ED5B</color>
+    <color name="cart_text_main">#E0E0E0</color>
+    <color name="cart_sum">#FFD76F</color>
+    <color name="cart_button">#89ED5B</color>
+    <color name="cart_button_text">#121212</color>
+    <color name="cart_button_icon">#121212</color>
+    <color name="dialog_background">#121212</color>
+
+</resources>
