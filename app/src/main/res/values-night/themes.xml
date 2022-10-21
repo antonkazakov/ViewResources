@@ -27,8 +27,13 @@
         <item name="cornerSize">5%</item>
     </style>
 
-    <style name="ContactsInput" parent="Widget.MaterialComponents.TextInputLayout.FilledBox" >
+    <style name="ContactsInputDrop" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu" >
         <!-- underline color in FilledBox style -->
         <item name="boxStrokeColor">@color/contacts_edit_color</item>
+        <item name="android:textColorHint">@color/main_color</item>
+        <item name="android:textColor">@color/main_color</item>
+        <item name="endIconTint">@color/icons_color</item>
+        <item name="boxCornerRadiusTopEnd">4dp</item>
+        <item name="boxCornerRadiusTopStart">4dp</item>
     </style>
 </resources>

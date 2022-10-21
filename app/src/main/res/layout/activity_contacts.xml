@@ -15,6 +15,7 @@
         android:layout_marginTop="8dp"
         android:hint="@string/name_main_color"
         app:endIconDrawable="@drawable/ic_account"
+        app:endIconMode="custom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -35,6 +36,7 @@
         android:layout_marginEnd="16dp"
         android:hint="@string/edit_phone_number"
         app:endIconDrawable="@drawable/ic_phone"
+        app:endIconMode="custom"
         app:layout_constraintEnd_toStartOf="@id/edit_code"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintHorizontal_weight="3"
@@ -76,6 +78,7 @@
         android:layout_marginTop="26dp"
         android:hint="@string/edit_address"
         app:endIconDrawable="@drawable/ic_map_marker"
+        app:endIconMode="custom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edit_phone">
@@ -134,8 +137,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="26dp"
         android:hint="@string/edit_zip"
-        android:textColor="@color/main_color"
-        android:textColorHint="@color/main_color"
         app:boxCornerRadiusTopEnd="4dp"
         app:boxCornerRadiusTopStart="4dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -157,9 +158,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="26dp"
         android:hint="@string/edit_birthday"
-        android:textColor="@color/main_color"
-        android:textColorHint="@color/main_color"
         app:endIconDrawable="@drawable/ic_calendar"
+        app:endIconMode="custom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edit_city">
@@ -179,6 +179,7 @@
         android:layout_marginTop="26dp"
         android:hint="@string/edit_notes"
         app:endIconDrawable="@drawable/ic_pen"
+        app:endIconMode="custom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edit_birthday">
