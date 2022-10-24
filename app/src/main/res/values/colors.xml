@@ -7,9 +7,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="toolbar">#2980B9</color>
-    <color name="contact_input">#F0F0F0</color>
-    <color name="register">#2ECC71</color>
-    <color name="color_contacts">#263238</color>
-    <color name="pay_button_cash">#979797</color>
+    <color name="blue">#2980B9</color>
+    <color name="whitish">#F0F0F0</color>
+    <color name="green">#2ECC71</color>
+    <color name="dark_grey">#263238</color>
+    <color name="grey">#979797</color>
 </resources>
