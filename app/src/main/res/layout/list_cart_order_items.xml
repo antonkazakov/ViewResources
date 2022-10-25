@@ -19,13 +19,13 @@
 
     <TextView
         android:id="@+id/name_order"
-        style="@style/myThemeCart"
+        style="@style/CartTheme"
         android:layout_width="0dp"
         android:layout_height="24dp"
         android:layout_marginEnd="8dp"
         android:gravity="center_vertical"
         android:lineSpacingExtra="5sp"
-        android:textAppearance="@style/adapter_cart"
+        android:textAppearance="@style/body1"
         app:layout_constraintEnd_toStartOf="@id/cost_order"
         app:layout_constraintStart_toEndOf="@id/image_order"
         app:layout_constraintTop_toTopOf="@id/image_order"
@@ -33,12 +33,12 @@
 
     <TextView
         android:id="@+id/cost_order"
-        style="@style/myThemeCart"
+        style="@style/CartTheme"
         android:layout_width="wrap_content"
         android:layout_height="24dp"
         android:gravity="end|top"
         android:lineSpacingExtra="5sp"
-        android:textAppearance="@style/adapter_cart"
+        android:textAppearance="@style/body1"
         android:translationY="-2.62sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/name_order"
@@ -47,12 +47,12 @@
 
     <TextView
         android:id="@+id/name_about"
-        style="@style/myThemeCart"
+        style="@style/CartTheme"
         android:layout_width="0dp"
         android:layout_height="16dp"
         android:gravity="center_vertical"
         android:lineSpacingExtra="2sp"
-        android:textAppearance="@style/adapter_cartAbout"
+        android:textAppearance="@style/body3"
         app:layout_constraintEnd_toEndOf="@id/name_order"
         app:layout_constraintStart_toStartOf="@id/name_order"
         app:layout_constraintTop_toBottomOf="@id/name_order"
