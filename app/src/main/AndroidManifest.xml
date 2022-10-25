@@ -14,12 +14,12 @@
         android:theme="@style/Theme.ViewResources"
         tools:targetApi="31">
         <activity
-            android:theme="@style/MyThemeContact"
+            android:theme="@style/CartTheme"
             android:name=".CartActivity"
             android:label="Cart"
             android:exported="false" />
         <activity
-            android:theme="@style/myThemeCart"
+            android:theme="@style/ContactsTheme"
             android:name=".ContactsActivity"
             android:label="Contacts"
             android:exported="false" />
