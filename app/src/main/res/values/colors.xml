@@ -7,34 +7,18 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="background_contacts">#2980B9</color>
-    <color name="toolbar_contacts">#2980B9</color>
-    <color name="contacts_editTextLayoutField">#F0F0F0</color>
-    <color name="dark_color">#263238</color>
-    <color name="icon_gray">#979797</color>
-    <color name="icon_contacts">#979797</color>
-    <color name="contacts_buttonReg">#2ECC71</color>
-    <color name="cart_icon_delete">#E74C3C</color>
-    <color name="dialogRegister_buttonDown">#2980B9</color>
-    <color name="dialogRegister_anotherColor">#2980B9</color>
-
-
-    <color name="contacts_allfields_darkTheme">#272727</color>
-    <color name="contacts_toolbarBack_darkTheme">#121212</color>
-    <color name="contacts_textColorAll_darkTheme">#E0E0E0</color>
-    <color name="contacts_toolbaricon_darkTheme">#888888</color>
-    <color name="contacts_buttonReg_darkTheme">#4FB8FF</color>
-
-    <color name="cart_buttonBuy_darkTheme">#89ED5B</color>
-    <color name="cart_buttonBuyText_darkTheme">#121212</color>
-    <color name="cart_buttonBuyIcon_darkTheme">#121212</color>
-    <color name="cart_orderTotaltext_darkTheme">#FFD76F</color>
-    <color name="cart_itemsIncart_darkTheme">#89ED5B</color>
-    <color name="cart_icon_delete_darkTheme">#888888</color>
-
-    <color name="dialogRegister_textColorAll_darkTheme">#E0E0E0</color>
-    <color name="dialogRegister_textColorButton">#4FB8FF</color>
-    <color name="dialogRegister_buttonDownText">#121212</color>
-    <color name="dialogRegister_resertPassword_darkTheme">#E0E0E0</color>
+    <color name="blue_deep">#2980B9</color>
+    <color name="blue_bright">#4FB8FF</color>
+    <color name="black_gray">#121212</color>
+    <color name="gray_light">#E0E0E0</color>
+    <color name="gray_bright">#F0F0F0</color>
+    <color name="gray_normal">#979797</color>
+    <color name="gray_dark">#888888</color>
+    <color name="gray_deep_dark">#263238</color>
+    <color name="gray_black">#272727</color>
+    <color name="green_bright">#89ED5B</color>
+    <color name="green_grass">#2ECC71</color>
+    <color name="orange_red">#E74C3C</color>
+    <color name="orange_bright">#FFD76F</color>
 
 </resources>
