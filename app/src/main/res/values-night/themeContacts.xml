@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="ContactsTheme" parent="Theme.ViewResources">
+        <item name="colorPrimary">@color/gray_black</item>
+        <item name="colorPrimaryVariant">@color/black_gray</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="toolbarStyle">@style/myToolbar</item>
+        <item name="textInputStyle">@style/myTextInput</item>
+        <item name="colorControlNormal">@color/gray_dark</item>
+    </style>
+
+    <style name="myToolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="colorOnPrimary">@color/gray_light</item>
+        <item name="navigationIconTint">@color/gray_dark</item>
+        <item name="android:statusBarColor">@color/gray_black</item>
+    </style>
+
+    <style name="myTextInput" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="android:lineHeight" tools:targetApi="p">28sp</item>
+        <item name="font">@font/roboto_regular</item>
+        <item name="boxBackgroundColor">@color/gray_black</item>
+        <item name="endIconTint">@color/gray_dark</item>
+        <item name="hintTextColor">@color/gray_light</item>
+        <item name="android:textColorHint">@color/gray_light</item>
+        <item name="helperTextTextColor">@color/gray_light</item>
+        <item name="boxStrokeColor">@color/gray_black</item>
+    </style>
+
+    <style name="myTextExposedDropdownMenu" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
+        <item name="android:lineHeight" tools:targetApi="p">28sp</item>
+        <item name="boxBackgroundColor">@color/gray_black</item>
+        <item name="hintTextColor">@color/gray_light</item>
+        <item name="textFillColor">@color/gray_light</item>
+        <item name="android:textColorHint">@color/gray_light</item>
+        <item name="helperTextTextColor">@color/gray_light</item>
+        <item name="boxStrokeColor">@color/gray_black</item>
+    </style>
+
+    <style name="myButtonStyle" parent="Widget.MaterialComponents.Button.Icon">
+        <item name="backgroundTint">@color/blue_bright</item>
+        <item name="android:textColor">@color/black_gray</item>
+    </style>
+</resources>

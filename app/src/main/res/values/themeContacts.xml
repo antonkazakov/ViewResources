@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ContactsTheme" parent="Theme.ViewResources">
+        <item name="colorPrimary">@color/blue_deep</item>
+        <item name="colorPrimaryVariant">@color/blue_deep</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="toolbarStyle">@style/myToolbar</item>
+        <item name="textInputStyle">@style/myTextInput</item>
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+
+    <style name="myToolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="titleTextColor">@color/white</item>
+        <item name="navigationIconTint">@color/white</item>
+    </style>
+
+    <style name="myTextInput" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxBackgroundColor">@color/gray_bright</item>
+        <item name="endIconTint">@color/gray_normal</item>
+        <item name="helperTextTextColor">@color/blue_deep</item>
+        <item name="hintTextColor">@color/blue_deep</item>
+        <item name="android:textColorHint">@color/gray_deep_dark</item>
+    </style>
+
+    <style name="myTextExposedDropdownMenu" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
+        <item name="boxBackgroundColor">@color/gray_bright</item>
+        <item name="android:textColorHint">@color/gray_deep_dark</item>
+    </style>
+
+    <style name="myButtonStyle" parent="Widget.MaterialComponents.Button.Icon">
+        <item name="backgroundTint">@color/green_grass</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>

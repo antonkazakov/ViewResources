@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CartTheme" parent="ContactsTheme">
+        <item name="android:textColor">@color/gray_light</item>
+    </style>
+    <style name="myThemeCartOrderTotalText" parent="CartTheme">
+        <item name="android:textColor">@color/orange_bright</item>
+    </style>
+    <style name="myThemeCartCart_itemsIncart" parent="CartTheme">
+        <item name="android:textColor">@color/green_bright</item>
+    </style>
+    <style name="myThemeCartCart_imageDelete" parent="CartTheme">
+        <item name="colorControlNormal">@color/gray_dark</item>
+    </style>
+
+    <style name="myButtonStyleCart" parent="Widget.MaterialComponents.ExtendedFloatingActionButton.Icon">
+        <item name="backgroundTint">@color/green_bright</item>
+        <item name="android:textColor">@color/black_gray</item>
+        <item name="iconTint">@color/black_gray</item>
+    </style>
+</resources>
