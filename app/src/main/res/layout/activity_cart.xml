@@ -22,6 +22,7 @@
             <com.google.android.material.appbar.MaterialToolbar
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="?attr/cartToolBarColor"
                 app:menu="@menu/cart_menu"
                 app:navigationIcon="@drawable/ic_arrow_left"
                 app:title="@string/cart"
@@ -37,7 +38,7 @@
             android:layout_marginTop="@dimen/margin_medium"
             android:layout_marginBottom="@dimen/margin_tiny"
             android:text="@string/items_in_your_cart"
-            android:textColor="@color/black"
+            android:textColor="?attr/colorSecondaryVariant"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/cart_app_bar" />
@@ -97,6 +98,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="@string/your_order_total"
+                android:textColor="?attr/cartOrderTotalColor"
                 app:layout_constraintEnd_toStartOf="@id/cart_order_cost"
                 app:layout_constraintHorizontal_weight="3"
                 app:layout_constraintStart_toStartOf="parent"
@@ -109,6 +111,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/order_total_cost"
                 android:textAlignment="textEnd"
+                android:textColor="?attr/cartOrderTotalColor"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_weight="1"
                 app:layout_constraintStart_toEndOf="@id/cart_order_total"
@@ -190,6 +193,7 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/pay_button"
+            style="@style/MaterialButtonOverlay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -198,10 +202,8 @@
             android:paddingHorizontal="@dimen/padding_large"
             android:paddingVertical="@dimen/padding_medium"
             android:text="@string/pay_now"
-            app:backgroundTint="@color/gray_900"
             app:cornerRadius="@dimen/button_corner_radius"
-            app:icon="@drawable/ic_wallet"
-            app:iconTint="@color/gray_500" />
+            app:icon="@drawable/ic_wallet" />
 
     </LinearLayout>
 

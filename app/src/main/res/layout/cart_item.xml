@@ -25,7 +25,6 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/margin_small"
-        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@id/cart_item_subtitle"
         app:layout_constraintEnd_toStartOf="@id/cart_item_cost"
         app:layout_constraintHorizontal_weight="2"
@@ -40,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/margin_small"
         android:layout_marginEnd="@dimen/margin_medium"
-        android:textColor="@color/black"
+        android:textColor="?attr/cartCaptionTextColor"
         app:layout_constraintBottom_toBottomOf="@id/cart_item_image"
         app:layout_constraintEnd_toEndOf="@id/cart_item_title"
         app:layout_constraintStart_toStartOf="@id/cart_item_title"
@@ -54,7 +53,6 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/margin_medium"
         android:textAlignment="textEnd"
-        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@id/cart_item_title"
@@ -69,6 +67,6 @@
         app:layout_constraintBottom_toBottomOf="@id/cart_item_subtitle"
         app:layout_constraintEnd_toEndOf="@+id/cart_item_cost"
         app:layout_constraintTop_toTopOf="@id/cart_item_subtitle"
-        app:tint="@color/red_500" />
+        app:tint="?attr/deleteIconColor" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

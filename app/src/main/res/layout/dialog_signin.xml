@@ -73,7 +73,7 @@
         android:layout_marginHorizontal="@dimen/margin_large"
         android:layout_marginTop="@dimen/margin_medium"
         android:text="@string/reset_my_password"
-        android:textColor="@color/blue_800"
+        android:textColor="?attr/dialogResetPasswordColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/password_text_input" />
 
