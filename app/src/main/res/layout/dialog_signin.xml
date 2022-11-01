@@ -9,8 +9,7 @@
         android:layout_width="0dp"
         android:layout_height="@dimen/text_height_large"
         android:text="@string/sign_in_label"
-        android:textSize="@dimen/text_size_large"
-        android:textStyle="bold"
+        android:textAppearance="?attr/textAppearanceSubtitle2"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/register_label"
@@ -23,9 +22,10 @@
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:text="@string/register_label"
+        android:textAllCaps="true"
         android:textSize="@dimen/text_size_small"
-        android:textStyle="normal"
-        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:textColor="?attr/colorPrimary"
         android:gravity="center_vertical | center_horizontal"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,7 +46,8 @@
         android:layout_marginEnd="@dimen/margin_large"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:hint="@string/input_field_email_hint"
-        android:textSize="@dimen/text_size_medium">
+        android:textAppearance="?attr/textAppearanceBody1"
+        android:textColorHint="?attr/colorOnTertiary">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/email_edit_text_input"
             android:layout_width="match_parent"
@@ -65,7 +66,8 @@
         android:layout_marginEnd="@dimen/margin_large"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:hint="@string/input_field_password_hint"
-        android:textSize="@dimen/text_size_medium">
+        android:textAppearance="?attr/textAppearanceBody1"
+        android:textColorHint="?attr/colorOnTertiary">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/pass_edit_text_input"
             android:layout_width="match_parent"
@@ -74,12 +76,12 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
+        android:theme="@style/LinkTextThemeOverlay"
         android:id="@+id/reset_password"
         android:layout_width="match_parent"
         android:layout_height="@dimen/text_height_smaller"
         android:text="@string/reset_password_label"
-        android:textColor="@color/blue"
-        android:textSize="@dimen/text_size_smaller"
+        android:textAppearance="?attr/textAppearanceCaption"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pass_edit_text"
@@ -100,7 +102,6 @@
         android:layout_marginBottom="@dimen/margin_medium"
         android:layout_marginStart="@dimen/margin_large"
         android:layout_marginEnd="@dimen/margin_large"
-        app:backgroundTint="@color/blue"
         android:text="@string/button_sign_in"
         android:textAllCaps="true"/>
 

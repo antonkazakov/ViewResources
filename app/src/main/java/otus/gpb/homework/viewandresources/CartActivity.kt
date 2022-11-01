@@ -37,7 +37,7 @@ class CartActivity : AppCompatActivity() {
             text = "Caption"
         }
         item.findViewById<TextView?>(R.id.item_price)?.apply {
-            text = "\$US, ${String.format("%.2f", price)}"
+            text = "\$US,${String.format("%.2f", price)}"
         }
     }
 
