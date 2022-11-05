@@ -1,3 +1,37 @@
 <resources>
     <string name="app_name">View &amp; Resources</string>
+
+    <string name="input_name_hint">Name</string>
+    <string name="button_register">Register</string>
+    <string name="input_phone_number_hint">Phone number</string>
+    <string name="input_address_hint">Address</string>
+    <string name="input_city_hint">City</string>
+    <string name="input_notes_hint">Notes</string>
+    <string name="input_state_hint">State</string>
+    <string name="input_zip_hint">Zip</string>
+    <string name="input_birthday_hint">Birthday</string>
+    <string name="input_phone_select_hint">Select</string>
+    <string name="cart_items_counter">4 items in your cart</string>
+    <string name="cart_order_total_text">Your order total</string>
+    <string name="cart_total_placeholder">41.24</string>
+    <string name="cart_subtotal">Subtotal</string>
+    <string name="cart_shipping">Shipping</string>
+    <string name="cart_tax">Tax</string>
+    <string name="cart_subtotal_placeholder">36.00</string>
+    <string name="cart_shipping_placeholder">2.00</string>
+    <string name="cart_tax_placeholder">3.50</string>
+    <string name="cart_button_pay_now">Pay now</string>
+    <string name="cart_item_name_placeholder_1">On the top</string>
+    <string name="cart_item_text_caption">Caption</string>
+    <string name="cart_item_price">$US,1.50</string>
+    <string name="dialog_signin_button_signin">Sign in</string>
+    <string name="dialog_signin_button_register">Register</string>
+    <string name="dialog_signin_button_reset_pass">Reset my password</string>
+    <string name="dialog_signin_email_hint">E-mail</string>
+    <string name="dialog_signin_password_hint">Password</string>
+    <string name="cart_toolbar_title">Cart</string>
+    <string name="cart_toolbar_menu_favourite_title">Favourite items</string>
+    <string name="toolbar_action_extras_title">More actions</string>
+    <string name="contacts_toolbar_action_search_title">Search contacts</string>
+    <string name="dialog_signin_header">Sign in</string>
 </resources>
