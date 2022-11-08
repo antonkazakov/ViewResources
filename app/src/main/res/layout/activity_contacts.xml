@@ -10,7 +10,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:background="@color/blue"
+        android:background="?attr/contactsToolbarColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -71,7 +71,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:hint="@string/name"
-        android:textColorHint="@color/dark_grey"
+        android:textColorHint="?attr/textColor"
         app:endIconDrawable="@drawable/ic_account_24"
         app:endIconMode="custom"
         app:layout_constraintEnd_toEndOf="parent"
@@ -82,7 +82,7 @@
             android:id="@+id/edit_name"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:backgroundTint="@color/whitish" />
+            android:backgroundTint="?attr/textFieldColor" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -93,7 +93,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:hint="@string/phone_number"
-        android:textColorHint="@color/dark_grey"
+        android:textColorHint="?attr/textColor"
         app:endIconDrawable="@drawable/ic_phone_24"
         app:endIconMode="custom"
         app:layout_constraintEnd_toStartOf="@id/select"
@@ -104,7 +104,7 @@
             android:id="@+id/edit_phone"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:backgroundTint="@color/whitish" />
+            android:backgroundTint="?attr/textFieldColor" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -115,7 +115,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:hint="@string/select"
-        android:textColorHint="@color/dark_grey"
+        android:textColorHint="?attr/textColor"
         app:endIconDrawable="@drawable/ic_down_24"
         app:endIconMode="custom"
         app:layout_constraintEnd_toEndOf="parent"
@@ -126,7 +126,7 @@
             android:id="@+id/edit_select"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:backgroundTint="@color/whitish" />
+            android:backgroundTint="?attr/textFieldColor" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -137,7 +137,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:hint="@string/address"
-        android:textColorHint="@color/dark_grey"
+        android:textColorHint="?attr/textColor"
         app:endIconDrawable="@drawable/ic_location_24"
         app:endIconMode="custom"
         app:layout_constraintEnd_toEndOf="parent"
@@ -148,7 +148,7 @@
             android:id="@+id/edit_address"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:backgroundTint="@color/whitish" />
+            android:backgroundTint="?attr/textFieldColor" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -159,7 +159,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:hint="@string/city"
-        android:textColorHint="@color/dark_grey"
+        android:textColorHint="?attr/textColor"
         app:layout_constraintEnd_toStartOf="@id/state"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/address">
@@ -168,7 +168,7 @@
             android:id="@+id/edit_city"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:backgroundTint="@color/whitish" />
+            android:backgroundTint="?attr/textFieldColor" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -178,7 +178,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
         android:hint="@string/state"
-        android:textColorHint="@color/dark_grey"
+        android:textColorHint="?attr/textColor"
         app:endIconDrawable="@drawable/ic_down_24"
         app:endIconMode="custom"
         app:layout_constraintEnd_toEndOf="@id/zip"
@@ -189,7 +189,7 @@
             android:id="@+id/edit_state"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:backgroundTint="@color/whitish" />
+            android:backgroundTint="?attr/textFieldColor" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -200,7 +200,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:hint="@string/zip"
-        android:textColorHint="@color/dark_grey"
+        android:textColorHint="?attr/textColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/state"
         app:layout_constraintTop_toBottomOf="@id/address">
@@ -209,7 +209,7 @@
             android:id="@+id/edit_zip"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:backgroundTint="@color/whitish" />
+            android:backgroundTint="?attr/textFieldColor" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -220,7 +220,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:hint="@string/birthday"
-        android:textColorHint="@color/dark_grey"
+        android:textColorHint="?attr/textColor"
         app:endIconDrawable="@drawable/ic_today_24"
         app:endIconMode="custom"
         app:layout_constraintEnd_toEndOf="parent"
@@ -231,7 +231,7 @@
             android:id="@+id/edit_birthday"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:backgroundTint="@color/whitish" />
+            android:backgroundTint="?attr/textFieldColor" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -242,7 +242,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:hint="@string/notes"
-        android:textColorHint="@color/dark_grey"
+        android:textColorHint="?attr/textColor"
         app:endIconDrawable="@drawable/ic_edit_24"
         app:endIconMode="custom"
         app:layout_constraintEnd_toEndOf="parent"
@@ -253,7 +253,7 @@
             android:id="@+id/edit_notes"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:backgroundTint="@color/whitish" />
+            android:backgroundTint="?attr/textFieldColor" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -263,7 +263,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:backgroundTint="@color/green"
+        android:backgroundTint="?attr/registerBtnColor"
         android:text="@string/register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

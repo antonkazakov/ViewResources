@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="PayButton" parent="Widget.MaterialComponents.ExtendedFloatingActionButton">
+        <item name="backgroundTint">?attr/payButtonColor</item>
+        <item name="iconTint">?attr/payButtonIconColor</item>
+        <item name="textColor">?attr/payButtonTextColor</item>
+    </style>
+
+</resources>

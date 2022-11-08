@@ -12,5 +12,20 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="cartToolbarColor">@color/blue</item>
+        <item name="contactsToolbarColor">@color/blue</item>
+        <item name="cartItemsColor">@color/dark_grey</item>
+        <item name="payButtonColor">@color/dark_grey</item>
+        <item name="payButtonTextColor">@color/white</item>
+        <item name="payButtonIconColor">@color/grey</item>
+        <item name="orderTotalColor">@color/dark_grey</item>
+        <item name="deleteItemColor">@color/red</item>
+        <item name="resetMyPasswordColor">@color/blue</item>
+        <item name="textColor">@color/dark_grey</item>
+        <item name="toolbarIconColor">@color/white</item>
+        <item name="textSignInColor">@color/dark_grey</item>
+        <item name="registerColor">@color/blue</item>
+        <item name="registerBtnColor">@color/green</item>
+        <item name="textFieldColor">@color/whitish</item>
     </style>
 </resources>

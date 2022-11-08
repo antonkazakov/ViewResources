@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.ViewResources" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimary">@color/lite_blue</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
@@ -12,5 +12,21 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="cartToolbarColor">@color/black_02</item>
+        <item name="contactsToolbarColor">@color/dark_grey_02</item>
+        <item name="cartItemsColor">@color/green_lite</item>
+        <item name="payButtonColor">@color/green_lite</item>
+        <item name="payButtonTextColor">@color/black</item>
+        <item name="payButtonIconColor">@color/black</item>
+        <item name="orderTotalColor">@color/yellow</item>
+        <item name="deleteItemColor">@color/grey_02</item>
+        <item name="resetMyPasswordColor">@color/grey_03</item>
+        <item name="textColor">@color/grey_03</item>
+        <item name="toolbarIconColor">@color/grey_02</item>
+        <item name="textSignInColor">@color/white</item>
+        <item name="registerColor">@color/lite_blue</item>
+        <item name="registerBtnColor">@color/lite_blue</item>
+        <item name="textFieldColor">@color/dark_grey_02</item>
     </style>
+
 </resources>
