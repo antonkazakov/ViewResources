@@ -6,4 +6,214 @@
     android:layout_height="match_parent"
     tools:context=".ContactsActivity">
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:layout_marginBottom="13dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/account"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/phoneNumber">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phoneNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="13dp"
+        android:layout_marginTop="13dp"
+        app:endIconDrawable="@drawable/phone"
+        app:endIconMode="custom"
+        app:layout_constraintEnd_toStartOf="@id/select"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintBottom_toTopOf="@+id/address">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/select"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Select"
+        android:layout_marginBottom="13dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintStart_toEndOf="@+id/phoneNumber"
+        app:layout_constraintBottom_toTopOf="@+id/address">
+
+        <AutoCompleteTextView
+            android:id="@+id/actv_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:layout_marginBottom="13dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/map_marker"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumber"
+        app:layout_constraintBottom_toTopOf="@id/state">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/city"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="City"
+        android:layout_marginBottom="13dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/state"
+        app:layout_constraintTop_toBottomOf="@+id/address"
+        app:layout_constraintBottom_toTopOf="@id/birthday">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/state"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="State"
+        app:layout_constraintEnd_toStartOf="@+id/zip"
+        app:layout_constraintTop_toBottomOf="@+id/address"
+        app:layout_constraintStart_toEndOf="@+id/city"
+        app:layout_constraintBottom_toTopOf="@id/birthday">
+
+        <AutoCompleteTextView
+            android:id="@+id/actv_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/zip"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Zip"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toEndOf="@+id/state"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address"
+        app:layout_constraintBottom_toTopOf="@id/birthday">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/birthday"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Birthday"
+        android:layout_marginBottom="13dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/calendar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/state"
+        app:layout_constraintBottom_toTopOf="@id/notes">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/notes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Notes"
+        android:layout_marginBottom="106dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/pencil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/birthday"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRegister">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="REGISTER"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
