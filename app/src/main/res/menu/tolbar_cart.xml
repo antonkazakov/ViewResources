@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/contacts_search"
+        android:icon="@drawable/tag_heart"
+        android:title="@string/tag"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/contacts_dots"
+        android:icon="@drawable/dots_vertical"
+        android:title="@string/settings"
+        app:showAsAction="ifRoom"/>
+</menu>
