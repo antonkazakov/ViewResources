@@ -32,4 +32,6 @@
     <string name="dialog_email">E-mail</string>
     <string name="dialog_password">Password</string>
     <string name="dialog_reset_password">Reset my password</string>
+    <string name="dialog_email_example">e.g. john@gmail.com</string>
+    <string name="dialog_password_example">******</string>
 </resources>
