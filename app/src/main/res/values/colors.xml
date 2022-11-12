@@ -8,7 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="backgroundTolBar">#2980B9</color>
+    <color name="backgroundBlue">#2980B9</color>
     <color name="backgroundPayButton">#263238</color>
     <color name="backgroundRegisterButton">#2ECC71</color>
+
+    <color name="for_register">#2980B9</color>
 </resources>
