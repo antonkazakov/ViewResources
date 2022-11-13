@@ -2,4 +2,10 @@
 <resources>
     <attr name="iconColor" format="color|reference"/>
     <attr name="errorColor" format="color|reference"/>
+    <attr name="textButtonColor" format="color|reference"/>
+    <attr name="subTitleColor" format="color|reference"/>
+    <attr name="titleColor" format="color|reference"/>
+    <attr name="buttonIconColor" format="color|reference"/>
+    <attr name="labelTextColor" format="color|reference"/>
+    <attr name="subLabelTextColor" format="color|reference"/>
 </resources>

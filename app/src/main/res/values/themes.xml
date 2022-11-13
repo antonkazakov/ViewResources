@@ -15,6 +15,12 @@
         <item name="iconColor">@color/dusty_gray</item>
         <item name="errorColor">@color/cinnabar</item>
         <item name="backgroundTint">@color/gallery</item>
+        <item name="textButtonColor">@color/white</item>
+        <item name="subTitleColor">@color/outer_space</item>
+        <item name="subLabelTextColor">@color/mariner</item>
+        <item name="titleColor">@color/outer_space</item>
+        <item name="buttonIconColor">@color/dusty_gray</item>
+        <item name="labelTextColor">@color/mariner</item>
     </style>
 
 

@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="280dp"
+    android:backgroundTint="?attr/textButtonColor"
     android:layout_height="wrap_content">
 
     <TextView
@@ -31,7 +32,7 @@
         android:layout_marginEnd="20dp"
         android:text="@string/register_button_text"
         android:textAlignment="textStart"
-        android:textColor="?attr/colorPrimary"
+        android:textColor="?attr/labelTextColor"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/dialog_title"
         app:layout_constraintEnd_toEndOf="parent"
@@ -89,7 +90,7 @@
         android:layout_marginTop="16dp"
         android:text="@string/dialog_reset_password"
         android:textAlignment="textEnd"
-        android:textColor="?attr/colorPrimary"
+        android:textColor="?attr/subLabelTextColor"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -101,9 +102,10 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="24dp"
         android:layout_marginVertical="16dp"
-        android:backgroundTint="?attr/colorPrimary"
+        android:backgroundTint="?attr/labelTextColor"
         android:text="@string/dialog_sign_in"
         android:textSize="14sp"
+        android:textColor="?attr/textButtonColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
