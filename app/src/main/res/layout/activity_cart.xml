@@ -10,11 +10,11 @@
     tools:context=".CartActivity">
 
     <TextView
+        android:textColor="?attr/cartHeaderCountColor"
         android:id="@+id/text_count_items"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/_4_items_in_your_card"
-        android:textColor="@color/cart_count_items"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -38,7 +38,6 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_marginTop="12dp"
-                android:background="@color/cart_text_main"
                 android:scaleType="centerCrop"
                 android:src="@drawable/raspberry"
                 app:layout_constraintStart_toStartOf="parent"
@@ -51,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:text="@string/on_the_top"
-                android:textColor="@color/cart_text_main"
+                android:textColor="?attr/mainColor"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toTopOf="@id/text_1_2"
                 app:layout_constraintStart_toEndOf="@id/image1"
@@ -64,7 +63,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:text="@string/caption"
-                android:textColor="@color/cart_text_main"
+                android:textColor="?attr/mainColor"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="@id/image1"
                 app:layout_constraintStart_toEndOf="@id/image1"
@@ -76,7 +75,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:text="@string/us_1_50"
-                android:textColor="@color/cart_text_main"
+                android:textColor="?attr/mainColor"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@id/text_1_1"
@@ -89,14 +88,13 @@
                 app:layout_constraintBottom_toBottomOf="@id/text_1_2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@id/text_1_2"
-                app:tint="@color/cart_cancel_button" />
+                app:tint="?attr/cartDeleteItemColor" />
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/image2"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_marginTop="32dp"
-                android:background="@color/cart_text_main"
                 android:src="@drawable/klubnika"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/image1"
@@ -108,7 +106,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:text="@string/forever_friends"
-                android:textColor="@color/cart_text_main"
+                android:textColor="?attr/mainColor"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toTopOf="@id/text_2_2"
                 app:layout_constraintStart_toEndOf="@id/image2"
@@ -121,7 +119,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:text="@string/caption"
-                android:textColor="@color/cart_text_main"
+                android:textColor="?attr/mainColor"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="@id/image2"
                 app:layout_constraintStart_toEndOf="@id/image2"
@@ -133,7 +131,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:text="@string/us_4_50"
-                android:textColor="@color/cart_text_main"
+                android:textColor="?attr/mainColor"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@id/text_2_1"
@@ -146,14 +144,13 @@
                 app:layout_constraintBottom_toBottomOf="@id/text_2_2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@id/text_2_2"
-                app:tint="@color/cart_cancel_button" />
+                app:tint="?attr/cartDeleteItemColor" />
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/image3"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_marginTop="32dp"
-                android:background="@color/cart_text_main"
                 android:scaleType="centerCrop"
                 android:src="@drawable/clock"
                 app:layout_constraintStart_toStartOf="parent"
@@ -166,7 +163,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:text="@string/prototyping_kit"
-                android:textColor="@color/cart_text_main"
+                android:textColor="?attr/mainColor"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toTopOf="@id/text_3_2"
                 app:layout_constraintStart_toEndOf="@id/image3"
@@ -179,7 +176,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:text="@string/caption"
-                android:textColor="@color/cart_text_main"
+                android:textColor="?attr/mainColor"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="@id/image3"
                 app:layout_constraintStart_toEndOf="@id/image3"
@@ -191,7 +188,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:text="@string/us_8_00"
-                android:textColor="@color/cart_text_main"
+                android:textColor="?attr/mainColor"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@id/text_3_1"
@@ -204,14 +201,13 @@
                 app:layout_constraintBottom_toBottomOf="@id/text_3_2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@id/text_3_2"
-                app:tint="@color/cart_cancel_button" />
+                app:tint="?attr/cartDeleteItemColor" />
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/image4"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_marginTop="32dp"
-                android:background="@color/cart_text_main"
                 android:scaleType="centerCrop"
                 android:src="@drawable/maxresdefault"
                 app:layout_constraintStart_toStartOf="parent"
@@ -224,7 +220,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:text="@string/basket_amp_coffee"
-                android:textColor="@color/cart_text_main"
+                android:textColor="?attr/mainColor"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toTopOf="@id/text_4_2"
                 app:layout_constraintStart_toEndOf="@id/image4"
@@ -237,7 +233,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:text="@string/caption"
-                android:textColor="@color/cart_text_main"
+                android:textColor="?attr/mainColor"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="@id/image4"
                 app:layout_constraintStart_toEndOf="@id/image4"
@@ -249,7 +245,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:text="@string/us_22_00"
-                android:textColor="@color/cart_text_main"
+                android:textColor="?attr/mainColor"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@id/text_4_1"
@@ -262,7 +258,7 @@
                 app:layout_constraintBottom_toBottomOf="@id/text_4_2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@id/text_4_2"
-                app:tint="@color/cart_cancel_button" />
+                app:tint="?attr/cartDeleteItemColor" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
@@ -281,7 +277,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         android:text="@string/tax"
-        android:textColor="@color/cart_text_main"
+        android:textColor="?attr/mainColor"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@id/btn_pay"
         app:layout_constraintStart_toStartOf="parent" />
@@ -292,7 +288,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         android:text="@string/_3_50"
-        android:textColor="@color/cart_text_main"
+        android:textColor="?attr/mainColor"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@id/btn_pay"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -303,7 +299,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:text="@string/shipping"
-        android:textColor="@color/cart_text_main"
+        android:textColor="?attr/mainColor"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@id/text_tax"
         app:layout_constraintStart_toStartOf="parent" />
@@ -314,7 +310,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:text="@string/_2_00"
-        android:textColor="@color/cart_text_main"
+        android:textColor="?attr/mainColor"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@id/text_tax_val"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -325,7 +321,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:text="@string/subtotal"
-        android:textColor="@color/cart_text_main"
+        android:textColor="?attr/mainColor"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@id/text_shipping"
         app:layout_constraintStart_toStartOf="parent" />
@@ -336,7 +332,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:text="@string/_36_00"
-        android:textColor="@color/cart_text_main"
+        android:textColor="?attr/mainColor"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@id/text_shipping_val"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -347,7 +343,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         android:text="@string/your_order_total"
-        android:textColor="@color/cart_sum"
+        android:textColor="?attr/cartCheckHeaderColor"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@id/text_subtotal"
@@ -359,7 +355,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         android:text="@string/_41_24"
-        android:textColor="@color/cart_sum"
+        android:textColor="?attr/cartCheckHeaderColor"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@id/text_subtotal_val"
@@ -370,11 +366,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
+        android:backgroundTint="?attr/cartButtonColor"
         android:text="@string/btn_pay"
-        android:textColor="@color/cart_button_text"
-        app:backgroundTint="@color/cart_button"
+        android:textColor="?attr/backgroundColor"
         app:icon="@drawable/ic_cash_multiple"
-        app:iconTint="@color/cart_button_icon"
+        app:iconTint="?attr/cartButtonIconColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="mainColor" format="color" />
+    <attr name="accentColor" format="color" />
+    <attr name="primaryColor" format="color" />
+    <attr name="secondaryColor" format="color" />
+    <attr name="tretiaryColor" format="color" />
+    <attr name="iconColor" format="color" />
+    <attr name="shadeColor" format="color" />
+
+    <attr name="actionbarIconColor" format="color" />
+    <!-- contacts activity -->
+    <attr name="contactsButtonColor" format="color" />
+    <!-- cart activity -->
+    <attr name="cartButtonColor" format="color" />
+    <attr name="cartButtonIconColor" format="color" />
+    <attr name="cartCheckHeaderColor" format="color" />
+    <attr name="cartDeleteItemColor" format="color" />
+    <attr name="cartHeaderCountColor" format="color" />
+    <!-- sign in dialog -->
+    <attr name="signResetColor" format="color" />
+</resources>

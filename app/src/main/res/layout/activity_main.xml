@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    style="@style/ActionBarSecond">
+    android:background="?attr/backgroundColor"
+    tools:context=".MainActivity">
 
     <Button
         android:id="@+id/cart_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/contacts_button"
+        android:backgroundTint="?attr/contactsButtonColor"
         android:text="@string/open_cart"
-        android:textColor="@color/background_color"
+        android:textColor="?attr/backgroundColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,9 +23,9 @@
         android:id="@+id/signin_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/contacts_button"
+        android:backgroundTint="?attr/contactsButtonColor"
         android:text="@string/show_sign_in_dialog"
-        android:textColor="@color/background_color"
+        android:textColor="?attr/backgroundColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cart_button" />
@@ -34,9 +34,9 @@
         android:id="@+id/contacts_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/contacts_button"
+        android:backgroundTint="?attr/contactsButtonColor"
         android:text="@string/open_contacts"
-        android:textColor="@color/background_color"
+        android:textColor="?attr/backgroundColor"
         app:layout_constraintBottom_toTopOf="@+id/cart_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="?attr/backgroundColor"
     android:padding="16dp"
     tools:context=".ContactsActivity">
 
@@ -13,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:hint="@string/name_main_color"
+        android:hint="@string/name_main"
         app:endIconDrawable="@drawable/ic_account"
         app:endIconMode="custom"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,8 +24,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edit_name_input"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:backgroundTint="@color/shade_color" />
+            android:layout_height="match_parent" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -46,8 +46,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edit_phone_input"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:backgroundTint="@color/shade_color" />
+            android:layout_height="match_parent" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -66,7 +65,6 @@
             android:id="@+id/edit_code_input"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:backgroundTint="@color/shade_color"
             tools:ignore="LabelFor" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -86,8 +84,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edit_address_input"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:backgroundTint="@color/shade_color" />
+            android:layout_height="match_parent" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -106,8 +103,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edit_city_input"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:backgroundTint="@color/shade_color" />
+            android:layout_height="match_parent" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -127,12 +123,12 @@
             android:id="@+id/edit_state_input"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:backgroundTint="@color/shade_color"
             tools:ignore="LabelFor" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edit_zip"
+        style="@style/ContactsInput"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="26dp"
@@ -147,8 +143,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edit_zip_input"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:backgroundTint="@color/shade_color" />
+            android:layout_height="match_parent" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -167,8 +162,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edit_birthday_input"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:backgroundTint="@color/shade_color" />
+            android:layout_height="match_parent" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -187,16 +181,15 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edit_notes_input"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:backgroundTint="@color/shade_color" />
+            android:layout_height="match_parent" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/contacts_button"
+        android:backgroundTint="?attr/contactsButtonColor"
         android:text="@string/btn_register"
-        android:textColor="@color/background_color"
+        android:textColor="?attr/backgroundColor"
         app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
