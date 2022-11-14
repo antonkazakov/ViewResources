@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="topIcon" format="color"/>
+    <attr name="crossIcon" format="color"/>
+    <attr name="payButtonIcon" format="color"/>
+</resources>

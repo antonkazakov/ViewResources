@@ -13,4 +13,19 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="ButtonPay" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/backgroundPayButton</item>
+    </style>
+
+    <style name="MyButtonRegister" parent="Widget.MaterialComponents.Button.TextButton">
+    </style>
+
+    <style name="MyButtonRegisterOnCard" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/backgroundRegisterButton</item>
+    </style>
+
+    <style name="MyTextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/black</item>
+    </style>
 </resources>

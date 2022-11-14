@@ -8,6 +8,7 @@
 
     <TextView
         android:id="@+id/mainTitle"
+        style="@style/MainTitleNight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -360,6 +361,7 @@
 
         <TextView
             android:id="@+id/tvTotalOrder"
+            style="@style/TotalOrderNight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
@@ -403,6 +405,7 @@
 
         <TextView
             android:id="@+id/tvTotalOrderSum"
+            style="@style/TotalOrderNight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
@@ -449,6 +452,7 @@
 
         <Button
             android:id="@+id/buttonPay"
+            style="@style/ButtonPay"
             android:layout_width="154dp"
             android:layout_height="56dp"
             android:text="@string/pay_now"
@@ -456,7 +460,6 @@
             android:layout_marginEnd="99dp"
             android:layout_marginStart="107dp"
             app:icon="@drawable/wallet"
-            android:backgroundTint="@color/backgroundPayButton"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

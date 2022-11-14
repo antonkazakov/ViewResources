@@ -6,12 +6,12 @@
 
    <TextView
        android:id="@+id/tvSignIn"
+       style="@style/MyTextView"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:text="@string/sign_in"
        android:textSize="20sp"
        android:textStyle="bold"
-       android:textColor="@color/black"
        android:layout_marginTop="18dp"
        android:layout_marginStart="24dp"
        app:layout_constraintStart_toStartOf="parent"
@@ -73,11 +73,10 @@
         android:layout_height="wrap_content"
         android:text="@string/reset_my_password"
         android:textSize="14sp"
-        android:textColor="@color/for_register"
         android:layout_marginTop="224dp"
         android:layout_marginEnd="24dp"
         android:layout_marginStart="24dp"
-        style="@style/Widget.MaterialComponents.Button.TextButton"
+        style="@style/MyButtonRegister"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
     <Button
