@@ -9,14 +9,15 @@
     <TextView
         android:id="@+id/mainTitle"
         style="@style/MainTitleNight"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="8dp"
         android:text="@string/main_title"
+        android:textSize="14sp"
+        android:textAlignment="viewStart"
         android:textAppearance="?attr/textAppearanceBody2"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,10 +26,10 @@
         android:layout_width="match_parent"
         android:layout_height="304dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/priceCard"
+        android:layout_marginTop="44dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mainTitle">
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:id="@+id/llCards"
@@ -43,13 +44,13 @@
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/card1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="16dp">
+                android:layout_height="wrap_content">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="4dp">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
@@ -60,6 +61,8 @@
                             android:layout_width="48dp"
                             android:layout_height="48dp"
                             android:src="@drawable/cake"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="12dp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
@@ -68,22 +71,25 @@
                             android:id="@+id/llDescription1"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:layout_marginStart="16dp"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="16dp"
                             android:orientation="vertical"
                             app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toEndOf="@+id/image1"
+                            app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent">
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/on_the_top"
+                                android:textSize="16sp"
                                 android:textAppearance="?attr/textAppearanceHeadline6" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/caption"
+                                android:textSize="12sp"
                                 android:textAppearance="?attr/textAppearanceBody2" />
                         </LinearLayout>
 
@@ -92,6 +98,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:orientation="vertical"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginTop="16dp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toTopOf="parent">
@@ -100,6 +108,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/sum_1"
+                                android:textSize="16sp"
                                 android:textAppearance="?attr/textAppearanceHeadline6" />
 
                             <ImageView
@@ -117,13 +126,13 @@
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/card2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="16dp">
+                android:layout_height="wrap_content">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="4dp">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
@@ -134,6 +143,8 @@
                             android:layout_width="48dp"
                             android:layout_height="48dp"
                             android:src="@drawable/cake"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="12dp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
@@ -142,22 +153,25 @@
                             android:id="@+id/llDescription2"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:layout_marginStart="16dp"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="16dp"
                             android:orientation="vertical"
                             app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toEndOf="@+id/image2"
+                            app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent">
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/forever_friends"
+                                android:textSize="16sp"
                                 android:textAppearance="?attr/textAppearanceHeadline6" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/caption"
+                                android:textSize="12sp"
                                 android:textAppearance="?attr/textAppearanceBody2" />
                         </LinearLayout>
 
@@ -166,6 +180,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:orientation="vertical"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginTop="16dp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toTopOf="parent">
@@ -174,6 +190,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/sum_2"
+                                android:textSize="16sp"
                                 android:textAppearance="?attr/textAppearanceHeadline6" />
 
                             <ImageView
@@ -191,8 +208,7 @@
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/card3"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="16dp">
+                android:layout_height="wrap_content">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -208,6 +224,8 @@
                             android:layout_width="48dp"
                             android:layout_height="48dp"
                             android:src="@drawable/cake"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="12dp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
@@ -216,22 +234,25 @@
                             android:id="@+id/llDescription3"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:layout_marginStart="16dp"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="16dp"
                             android:orientation="vertical"
                             app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toEndOf="@+id/image3"
+                            app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent">
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/prototyping_kit"
+                                android:textSize="16sp"
                                 android:textAppearance="?attr/textAppearanceHeadline6" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/caption"
+                                android:textSize="12sp"
                                 android:textAppearance="?attr/textAppearanceBody2" />
                         </LinearLayout>
 
@@ -240,6 +261,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:orientation="vertical"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginTop="16dp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toTopOf="parent">
@@ -248,6 +271,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/sum_3"
+                                android:textSize="16sp"
                                 android:textAppearance="?attr/textAppearanceHeadline6" />
 
                             <ImageView
@@ -265,8 +289,7 @@
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/card4"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="16dp">
+                android:layout_height="wrap_content">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -282,6 +305,8 @@
                             android:layout_width="48dp"
                             android:layout_height="48dp"
                             android:src="@drawable/cake"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="12dp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
@@ -290,22 +315,25 @@
                             android:id="@+id/llDescription4"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:layout_marginStart="16dp"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="16dp"
                             android:orientation="vertical"
                             app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toEndOf="@+id/image4"
+                            app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent">
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/tittle_card3"
+                                android:textSize="16sp"
                                 android:textAppearance="?attr/textAppearanceHeadline6" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/caption"
+                                android:textSize="12sp"
                                 android:textAppearance="?attr/textAppearanceBody2" />
                         </LinearLayout>
 
@@ -314,6 +342,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:orientation="vertical"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginTop="16dp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toTopOf="parent">
@@ -322,6 +352,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/sum_4"
+                                android:textSize="16sp"
                                 android:textAppearance="?attr/textAppearanceHeadline6" />
 
                             <ImageView
@@ -335,7 +366,6 @@
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
-
         </LinearLayout>
     </ScrollView>
 
@@ -368,6 +398,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginBottom="16dp"
             android:text="@string/order_total"
+            android:textSize="20sp"
             android:textAppearance="?attr/textAppearanceHeadline6"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -387,18 +418,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/subtotal"
+                android:textSize="16sp"
                 android:textAppearance="?attr/textAppearanceBody2" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/shipping"
+                android:textSize="16sp"
                 android:textAppearance="?attr/textAppearanceBody2" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tax"
+                android:textSize="16sp"
                 android:textAppearance="?attr/textAppearanceBody2" />
 
         </LinearLayout>
@@ -412,6 +446,7 @@
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             android:text="@string/order_total_sum"
+            android:textSize="20sp"
             android:textAppearance="?attr/textAppearanceHeadline6"
             android:textStyle="bold"
             app:layout_constraintTop_toTopOf="parent"
@@ -431,6 +466,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/subtotal_sum"
+                android:textSize="16sp"
                 android:layout_gravity="right"
                 android:textAppearance="?attr/textAppearanceBody2" />
 
@@ -438,6 +474,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/shipping_sum"
+                android:textSize="16sp"
                 android:layout_gravity="right"
                 android:textAppearance="?attr/textAppearanceBody2" />
 
@@ -445,6 +482,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tax_sum"
+                android:textSize="16sp"
                 android:layout_gravity="right"
                 android:textAppearance="?attr/textAppearanceBody2" />
 

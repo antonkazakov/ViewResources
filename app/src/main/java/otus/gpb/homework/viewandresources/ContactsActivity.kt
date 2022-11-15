@@ -30,7 +30,7 @@ class ContactsActivity : AppCompatActivity() {
         )
         autoCompleteTextViewSelect.setAdapter(adapter1)
 
-        val states = arrayOf("Select 1", "Select 2", "Select 3")
+        val states = arrayOf("State 1", "State 2", "State 3")
 
         val adapter2 = ArrayAdapter<String>(
             this, android.R.layout.simple_spinner_dropdown_item, states
