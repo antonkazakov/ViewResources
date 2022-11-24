@@ -21,9 +21,7 @@ class CartItemAdapter(private val data: ArrayList<CartItem>): RecyclerView.Adapt
         holder.itemName.text = item.name
         holder.itemCaption.text = item.caption
         holder.itemPrice.text = item.price
-        Glide.with(holder.itemView)
-            .load(item.imageUrl)
-            .into(holder.itemPic)
+        holder.itemPic.setImageResource(item.resourceId)
     }
 
     override fun getItemCount(): Int = data.size

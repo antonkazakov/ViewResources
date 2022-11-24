@@ -9,19 +9,19 @@ data class CartItem(
     val name: String,
     val caption: String,
     val price: String,
-    val imageUrl: String
+    val resourceId: Int
 )
 
 class CartActivity : AppCompatActivity() {
     private val cartItems = arrayListOf(
         CartItem("On the top","Caption1", "\$US,1.50",
-            "https://i.pinimg.com/originals/4d/a0/4b/4da04bba4b96c86f3d0ef9b7cd0801a2.jpg"),
+            R.drawable.ph_item1),
         CartItem("Forever Friends", "Caption2", "\$US, 4.50",
-            "https://audiodigital.ru/image/cache/catalog/demo/000536-440x440w.jpg"),
+            R.drawable.ph_item2),
         CartItem("Prototyping Kit", "Caption3", "\$US, 8.00",
-            "https://www.distinctlybritish.com/Files/102248/Img/19/IMP-118x800.jpg"),
+            R.drawable.ph_item3),
         CartItem("Basket & Coffee", "Caption4", "\$US, 22.00",
-            "https://i.pinimg.com/736x/2d/c8/47/2dc84713f50a92160caa76beb1c15976.jpg")
+            R.drawable.ph_item4)
     )
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

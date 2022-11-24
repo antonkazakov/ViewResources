@@ -3,59 +3,61 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="72dp"
+    android:layout_marginBottom="8dp">
 
     <TextView
         android:id="@+id/cart_item_caption"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/main"
+        android:layout_height="16dp"
         android:layout_marginStart="16dp"
         android:text="@string/cart_item_text_caption"
+        android:textAppearance="@style/TextAppearance.App.Caption"
         app:layout_constraintStart_toEndOf="@+id/cart_item_image"
         app:layout_constraintTop_toBottomOf="@+id/cart_item_name" />
 
     <TextView
         android:id="@+id/cart_item_name"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="24dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:text="@string/cart_item_name_placeholder_1"
-        android:textColor="@color/main"
-        android:textSize="@dimen/body_1"
+        android:textAppearance="@style/TextAppearance.App.Body1"
         app:layout_constraintStart_toEndOf="@+id/cart_item_image"
-        app:layout_constraintTop_toTopOf="@+id/cart_item_image" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/cart_item_image"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.RoundedCorners2Dp" />
 
     <TextView
         android:id="@+id/cart_item_price"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="24dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:text="@string/cart_item_price"
-        android:textColor="@color/main"
-        android:textSize="@dimen/body_1"
+        android:textAppearance="@style/TextAppearance.App.Body1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.appcompat.widget.AppCompatImageButton
+    <ImageButton
+        style="@style/LightAccentImageButton"
         android:layout_width="10dp"
         android:layout_height="10dp"
         android:layout_marginTop="4dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="20dp"
         android:src="@drawable/ic_delete"
-        android:tint="@color/accent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cart_item_price" />
 

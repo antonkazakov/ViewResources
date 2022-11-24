@@ -34,4 +34,5 @@
     <string name="toolbar_action_extras_title">More actions</string>
     <string name="contacts_toolbar_action_search_title">Search contacts</string>
     <string name="dialog_signin_header">Sign in</string>
+    <string name="contacts_toolbar_header">Contacts</string>
 </resources>

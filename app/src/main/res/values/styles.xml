@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="RoundedFilledInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="android:textColorHint">@color/main</item>
+        <item name="boxCornerRadiusTopStart">4dp</item>
+        <item name="boxCornerRadiusTopEnd">4dp</item>
+        <item name="background">@android:color/transparent</item>
+        <item name="endIconTint">@color/icon</item>
+        <item name="hintTextColor">@color/main</item>
+    </style>
+
+    <style name="RoundedFilledSelectInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
+        <item name="android:textColorHint">@color/main</item>
+        <item name="boxCornerRadiusTopStart">4dp</item>
+        <item name="boxCornerRadiusTopEnd">4dp</item>
+        <item name="background">@android:color/transparent</item>
+        <item name="endIconTint">@color/icon</item>
+        <item name="hintTextColor">@color/main</item>
+    </style>
+
+    <style name="OutlinedInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="hintTextColor">@color/main</item>
+        <item name="android:textColorHint">@color/main</item>
+    </style>
+
+    <style name="LightAccentImageButton" parent="Widget.AppCompat.ImageButton">
+        <item name="tint">@color/lightAccentImageButtonTint</item>
+    </style>
+
+    <style name="StrictFitButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+
+    <!-- Using stateListAnimator to remove shadows -->
+    <style name="TextButton" parent="StrictFitButton">
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="TextButton.PrimaryAccent" parent="TextButton">
+        <item name="android:textColor">@color/textButtonPrimaryAccentTextColor</item>
+    </style>
+
+    <style name="ActionButtonWithIcon" parent="StrictFitButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textAppearance">@style/TextAppearance.App.Headline6.Background</item>
+        <item name="android:backgroundTint">@color/actionButtonWithIconColor</item>
+        <item name="iconTint">@color/actionButtonWithIconTint</item>
+        <item name="cornerRadius">999dp</item>
+        <item name="iconPadding">11dp</item>
+        <item name="iconSize">19dp</item>
+    </style>
+
+    <style name="AppButton" parent="StrictFitButton">
+        <item name="android:padding">0dp</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:backgroundTint">@color/appButtonColor</item>
+    </style>
+
+
+    <style name="AppToolbar" parent="">
+        <item name="navigationIconTint">@color/toolbarIconsColor</item>
+        <item name="titleTextColor">@color/toolbarTextColor</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.RoundedCorners2Dp" parent="">
+        <item name="cornerSize">2dp</item>
+    </style>
+</resources>

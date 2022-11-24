@@ -6,25 +6,9 @@
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/secondary</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" >@color/primary</item>
+        <item name="android:statusBarColor">@color/statusBarColor</item>
         <!-- Customize your theme here. -->
-    </style>
-
-    <style name="RoundedFilledInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
-        <item name="android:textColorHint">@color/main</item>
-        <item name="boxCornerRadiusTopStart">4dp</item>
-        <item name="boxCornerRadiusTopEnd">4dp</item>
-        <item name="background">@color/transparent</item>
-        <item name="endIconTint">@color/icon</item>
-        <item name="hintTextColor">@color/main</item>
-    </style>
-
-    <style name="RoundedFilledSelectInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
-        <item name="android:textColorHint">@color/main</item>
-        <item name="boxCornerRadiusTopStart">4dp</item>
-        <item name="boxCornerRadiusTopEnd">4dp</item>
-        <item name="background">@color/transparent</item>
-        <item name="endIconTint">@color/icon</item>
-        <item name="hintTextColor">@color/main</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorOnError">@color/accent</item>
     </style>
 </resources>
