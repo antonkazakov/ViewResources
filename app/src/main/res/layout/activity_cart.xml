@@ -18,7 +18,7 @@
             style="@style/AppToolbar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/cartToolbarColor"
+            android:background="?attr/cartToolbarColor"
             app:menu="@menu/cart_toolbar_menu"
             app:navigationIcon="@drawable/ic_back"
             app:title="@string/cart_toolbar_title" />

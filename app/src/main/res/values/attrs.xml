@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="textColorDarkAccent" format="color"/>
+    <attr name="textColorLightAccent" format="color"/>
+    <attr name="toolbarTextColor" format="color"/>
+    <attr name="toolbarIconsColor" format="color"/>
+    <attr name="cartToolbarColor" format="color"/>
+    <attr name="contactsToolbarColor" format="color"/>
+    <attr name="actionButtonWithIconColor" format="color"/>
+    <attr name="actionButtonWithIconTint" format="color"/>
+    <attr name="appButtonColor" format="color"/>
+    <attr name="statusBarColor" format="color"/>
+    <attr name="headline6DarkAccent" format="color"/>
+    <attr name="body2DarkAccent" format="color"/>
+    <attr name="lightAccentImageButtonTint" format="color"/>
+    <attr name="textButtonPrimaryAccentTextColor" format="color"/>
+    <attr name="inputFieldHintColor" format="color"/>
+    <attr name="inputFieldIconColor" format="color"/>
+    <attr name="inputEditTextBgTint" format="color"/>
+    <attr name="dialogueSignInBg" format="color"/>
+    <attr name="textButtonColor" format="color"/>
+</resources>

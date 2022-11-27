@@ -2,27 +2,27 @@
 <resources>
 
     <style name="TextAppearance.App.Headline6.DarkAccent" parent="TextAppearance.MaterialComponents.Headline6">
-        <item name="android:textColor">@color/headline6DarkAccent</item>
+        <item name="android:textColor">?attr/headline6DarkAccent</item>
     </style>
 
     <style name="TextAppearance.App.Headline6.Background" parent="TextAppearance.MaterialComponents.Headline6">
-        <item name="android:textColor">@color/background</item>
+        <item name="android:textColor">?attr/textColorLightAccent</item>
     </style>
 
     <style name="TextAppearance.App.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
-        <item name="android:textColor">@color/main</item>
+        <item name="android:textColor">?attr/textColorDarkAccent</item>
     </style>
 
     <style name="TextAppearance.App.Body2.DarkAccent" parent="TextAppearance.MaterialComponents.Body2">
-        <item name="android:textColor">@color/body2DarkAccent</item>
+        <item name="android:textColor">?attr/body2DarkAccent</item>
     </style>
 
     <style name="TextAppearance.App.Body1" parent="TextAppearance.MaterialComponents.Body1">
-        <item name="android:textColor">@color/main</item>
+        <item name="android:textColor">?attr/textColorDarkAccent</item>
     </style>
 
     <style name="TextAppearance.App.Caption" parent="TextAppearance.MaterialComponents.Caption">
-        <item name="android:textColor">@color/main</item>
+        <item name="android:textColor">?attr/textColorDarkAccent</item>
     </style>
 
 

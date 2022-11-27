@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Theme.ViewResources" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
@@ -6,9 +6,30 @@
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/secondary</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">@color/statusBarColor</item>
+        <item name="android:statusBarColor" >?attr/statusBarColor</item>
         <!-- Customize your theme here. -->
         <item name="android:colorBackground">@color/background</item>
         <item name="colorOnError">@color/accent</item>
+
+        <!-- Custom attrs. -->
+        <item name="toolbarTextColor">@color/background</item>
+        <item name="toolbarIconsColor">@color/background</item>
+        <item name="cartToolbarColor">@color/primary</item>
+        <item name="contactsToolbarColor">@color/primary</item>
+        <item name="actionButtonWithIconColor">@color/main</item>
+        <item name="actionButtonWithIconTint">@color/icon</item>
+        <item name="appButtonColor">@color/secondary</item>
+        <item name="statusBarColor">@color/primary</item>
+        <item name="headline6DarkAccent">@color/main</item>
+        <item name="body2DarkAccent">@color/main</item>
+        <item name="lightAccentImageButtonTint">@color/accent</item>
+        <item name="textButtonPrimaryAccentTextColor">@color/primary</item>
+        <item name="inputFieldHintColor">@color/main</item>
+        <item name="inputFieldIconColor">@color/icon</item>
+        <item name="inputEditTextBgTint">@color/shade</item>
+        <item name="textColorLightAccent">@color/background</item>
+        <item name="textColorDarkAccent">@color/main</item>
+        <item name="dialogueSignInBg">@color/background</item>
+        <item name="textButtonColor">@color/primary</item>
     </style>
 </resources>

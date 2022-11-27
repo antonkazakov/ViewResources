@@ -9,16 +9,4 @@
     <color name="background">#121212</color>
     <color name="shade">#272727</color>
 
-    <color name="toolbarTextColor">@color/main</color>
-    <color name="toolbarIconsColor">@color/icon</color>
-    <color name="cartToolbarColor">@color/background</color>
-    <color name="contactsToolbarColor">@color/shade</color>
-    <color name="actionButtonWithIconColor">@color/secondary</color>
-    <color name="actionButtonWithIconTint">@color/background</color>
-    <color name="appButtonColor">@color/primary</color>
-    <color name="statusBarColor">@color/background</color>
-    <color name="headline6DarkAccent">@color/tretiary</color>
-    <color name="body2DarkAccent">@color/secondary</color>
-    <color name="lightAccentImageButtonTint">@color/icon</color>
-    <color name="textButtonPrimaryAccentTextColor">@color/main</color>
 </resources>
