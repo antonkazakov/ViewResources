@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="toolBarIconColor" format="color" />
+    <attr name="cartToolBarColor" format="color" />
+    <attr name="cartPayButtonIconColor" format="color" />
+    <attr name="cartOrderTotalColor" format="color" />
+    <attr name="cartCaptionTextColor" format="color" />
+    <attr name="deleteIconColor" format="color" />
+    <attr name="dialogResetPasswordColor" format="color" />
+</resources>
