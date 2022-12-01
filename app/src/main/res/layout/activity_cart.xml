@@ -7,8 +7,8 @@
     tools:context=".CartActivity">
 
     <TextView
+        android:textColor="?attr/cartItemsColor"
         android:id="@+id/countItems"
-        style="@style/CartItemsTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -75,8 +75,8 @@
         tools:ignore="ContentDescription" />
 
     <TextView
+        android:textColor="?attr/orderTotalColor"
         android:id="@+id/orderTotalTextView"
-        style="@style/OrderTotalTextView"
         android:layout_width="0dp"
         android:layout_height="32dp"
         android:layout_marginStart="16dp"
@@ -89,8 +89,8 @@
         app:layout_constraintTop_toBottomOf="@id/dottedImageView" />
 
     <TextView
+        android:textColor="?attr/orderTotalColor"
         android:id="@+id/amountTextView"
-        style="@style/OrderTotalTextView"
         android:layout_width="72dp"
         android:layout_height="32dp"
         android:layout_marginStart="8dp"
@@ -105,8 +105,8 @@
         tools:text="TEST" />
 
     <TextView
+        android:textColor="?attr/textColor"
         android:id="@+id/orderDetailTextView"
-        style="@style/MainColorTextView"
         android:layout_width="0dp"
         android:layout_height="72dp"
         android:layout_marginStart="16sp"
@@ -119,8 +119,8 @@
         tools:text="TEXT" />
 
     <TextView
+        android:textColor="?attr/textColor"
         android:id="@+id/orderCountTextView"
-        style="@style/MainColorTextView"
         android:layout_width="72dp"
         android:layout_height="72dp"
         android:layout_marginTop="16dp"
@@ -132,7 +132,8 @@
         tools:text="096.24" />
 
     <com.google.android.material.button.MaterialButton
-        style="@style/PayNowButton"
+        style="@style/PayButton"
+        android:textColor="?attr/payButtonTextColor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"

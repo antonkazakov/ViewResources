@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="cartToolbarColor" format="color" />
+    <attr name="contactsToolbarColor" format="color" />
+    <attr name="cartItemsColor" format="color" />
+    <attr name="payButtonColor" format="color" />
+    <attr name="payButtonTextColor" format="color" />
+    <attr name="payButtonIconColor" format="color" />
+    <attr name="orderTotalColor" format="color" />
+    <attr name="deleteItemColor" format="color" />
+    <attr name="resetMyPasswordColor" format="color" />
+    <attr name="textColor" format="color" />
+    <attr name="toolbarIconColor" format="color" />
+    <attr name="textSignInColor" format="color" />
+    <attr name="registerColor" format="color" />
+    <attr name="registerBtnColor" format="color" />
+    <attr name="textFieldColor" format="color" />
+    <attr name="backgroundSingInDialog" format="color" />
+    <attr name="dialogInputTextColor" format="color" />
+</resources>

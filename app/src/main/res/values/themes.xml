@@ -2,15 +2,32 @@
     <!-- Base application theme. -->
     <style name="Theme.ViewResources" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimary">@color/blue</item>
         <item name="colorPrimaryVariant">@color/blue</item>
-        <item name="colorOnPrimary">@color/background_color</item>
+        <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/secondary_color</item>
+        <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="cartToolbarColor">@color/blue</item>
+        <item name="contactsToolbarColor">@color/blue</item>
+        <item name="cartItemsColor">@color/dark_grey</item>
+        <item name="payButtonColor">@color/dark_grey</item>
+        <item name="payButtonTextColor">@color/white</item>
+        <item name="payButtonIconColor">@color/grey</item>
+        <item name="orderTotalColor">@color/dark_grey</item>
+        <item name="deleteItemColor">@color/red</item>
+        <item name="resetMyPasswordColor">@color/blue</item>
+        <item name="textColor">@color/dark_grey</item>
+        <item name="toolbarIconColor">@color/white</item>
+        <item name="textSignInColor">@color/dark_grey</item>
+        <item name="registerColor">@color/blue</item>
+        <item name="registerBtnColor">@color/green</item>
+        <item name="textFieldColor">@color/whitish</item>
+        <item name="backgroundSingInDialog">@color/white</item>
+        <item name="dialogInputTextColor">@color/black</item>
     </style>
 </resources>
