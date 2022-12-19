@@ -8,38 +8,33 @@
 
     <TextView
         android:id="@+id/mainTitle"
-        style="@style/MainTitleNight"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="@string/main_title"
-        android:textSize="14sp"
-        android:textAlignment="viewStart"
-        android:textAppearance="?attr/textAppearanceBody2"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="?attr/titleCart"/>
 
     <ScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
-        android:layout_height="304dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:orientation="vertical"
-        android:layout_marginTop="44dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/mainTitle"
+        app:layout_constraintBottom_toTopOf="@+id/priceCard">
 
         <LinearLayout
             android:id="@+id/llCards"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:orientation="vertical"
-            app:layout_constraintBottom_toTopOf="@+id/priceCard"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/mainTitle">
+            android:orientation="vertical">
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/card1"
@@ -63,6 +58,7 @@
                             android:src="@drawable/cake"
                             android:layout_marginStart="16dp"
                             android:layout_marginTop="12dp"
+                            android:layout_marginBottom="12dp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
@@ -79,18 +75,16 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <TextView
+                                style="@style/textView16"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="@string/on_the_top"
-                                android:textSize="16sp"
-                                android:textAppearance="?attr/textAppearanceHeadline6" />
+                                android:text="@string/on_the_top" />
 
                             <TextView
+                                style="@style/textView12"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="@string/caption"
-                                android:textSize="12sp"
-                                android:textAppearance="?attr/textAppearanceBody2" />
+                                android:text="@string/caption" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -105,11 +99,10 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <TextView
+                                style="@style/textView16"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/sum_1"
-                                android:textSize="16sp"
-                                android:textAppearance="?attr/textAppearanceHeadline6" />
+                                android:text="@string/sum_1"/>
 
                             <ImageView
                                 android:layout_width="15dp"
@@ -145,6 +138,7 @@
                             android:src="@drawable/cake"
                             android:layout_marginStart="16dp"
                             android:layout_marginTop="12dp"
+                            android:layout_marginBottom="12dp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
@@ -161,18 +155,16 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <TextView
+                                style="@style/textView16"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="@string/forever_friends"
-                                android:textSize="16sp"
-                                android:textAppearance="?attr/textAppearanceHeadline6" />
+                                android:text="@string/forever_friends"/>
 
                             <TextView
+                                style="@style/textView12"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="@string/caption"
-                                android:textSize="12sp"
-                                android:textAppearance="?attr/textAppearanceBody2" />
+                                android:text="@string/caption" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -187,11 +179,10 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <TextView
+                                style="@style/textView16"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/sum_2"
-                                android:textSize="16sp"
-                                android:textAppearance="?attr/textAppearanceHeadline6" />
+                                android:text="@string/sum_2" />
 
                             <ImageView
                                 android:layout_width="15dp"
@@ -226,6 +217,7 @@
                             android:src="@drawable/cake"
                             android:layout_marginStart="16dp"
                             android:layout_marginTop="12dp"
+                            android:layout_marginBottom="12dp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
@@ -242,18 +234,15 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <TextView
+                                style="@style/textView16"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="@string/prototyping_kit"
-                                android:textSize="16sp"
-                                android:textAppearance="?attr/textAppearanceHeadline6" />
-
+                                android:text="@string/prototyping_kit" />
                             <TextView
+                                style="@style/textView12"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="@string/caption"
-                                android:textSize="12sp"
-                                android:textAppearance="?attr/textAppearanceBody2" />
+                                android:text="@string/caption"/>
                         </LinearLayout>
 
                         <LinearLayout
@@ -268,11 +257,10 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <TextView
+                                style="@style/textView16"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/sum_3"
-                                android:textSize="16sp"
-                                android:textAppearance="?attr/textAppearanceHeadline6" />
+                                android:text="@string/sum_3" />
 
                             <ImageView
                                 android:layout_width="15dp"
@@ -307,6 +295,7 @@
                             android:src="@drawable/cake"
                             android:layout_marginStart="16dp"
                             android:layout_marginTop="12dp"
+                            android:layout_marginBottom="12dp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
@@ -323,18 +312,16 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <TextView
+                                style="@style/textView16"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="@string/tittle_card3"
-                                android:textSize="16sp"
-                                android:textAppearance="?attr/textAppearanceHeadline6" />
+                                android:text="@string/tittle_card3" />
 
                             <TextView
+                                style="@style/textView12"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="@string/caption"
-                                android:textSize="12sp"
-                                android:textAppearance="?attr/textAppearanceBody2" />
+                                android:text="@string/caption" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -349,11 +336,10 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <TextView
+                                style="@style/textView16"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/sum_4"
-                                android:textSize="16sp"
-                                android:textAppearance="?attr/textAppearanceHeadline6" />
+                                android:text="@string/sum_4" />
 
                             <ImageView
                                 android:layout_width="15dp"
@@ -367,6 +353,7 @@
 
             </com.google.android.material.card.MaterialCardView>
         </LinearLayout>
+
     </ScrollView>
 
 
@@ -383,125 +370,111 @@
             android:id="@+id/dottedLine"
             android:layout_width="match_parent"
             android:layout_height="5dp"
-            android:src="@drawable/dotted"
             android:layerType="software"
-            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/dotted"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/tvTotalOrder"
-            style="@style/TotalOrderNight"
+            style="@style/textView20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:layout_marginStart="16dp"
-            android:layout_marginBottom="16dp"
             android:text="@string/order_total"
-            android:textSize="20sp"
-            android:textAppearance="?attr/textAppearanceHeadline6"
-            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
             android:id="@+id/lldescriptionPrice"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="248dp"
+            android:layout_height="72dp"
             android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
             android:orientation="vertical"
             app:layout_constraintBottom_toTopOf="@+id/buttonPay"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvTotalOrder">
 
             <TextView
+                style="@style/textView16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/subtotal"
-                android:textSize="16sp"
-                android:textAppearance="?attr/textAppearanceBody2" />
+                android:text="@string/subtotal" />
 
             <TextView
+                style="@style/textView16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/shipping"
-                android:textSize="16sp"
-                android:textAppearance="?attr/textAppearanceBody2" />
+                android:text="@string/shipping" />
 
             <TextView
+                style="@style/textView16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tax"
-                android:textSize="16sp"
-                android:textAppearance="?attr/textAppearanceBody2" />
+                android:text="@string/tax" />
 
         </LinearLayout>
 
         <TextView
             android:id="@+id/tvTotalOrderSum"
-            style="@style/TotalOrderNight"
+            style="@style/textView20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
             android:text="@string/order_total_sum"
-            android:textSize="20sp"
-            android:textAppearance="?attr/textAppearanceHeadline6"
-            android:textStyle="bold"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
         <LinearLayout
             android:id="@+id/lldescriptionPriceSum"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
             android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
             android:orientation="vertical"
             app:layout_constraintBottom_toTopOf="@+id/buttonPay"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvTotalOrderSum">
 
             <TextView
+                style="@style/textView16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/subtotal_sum"
-                android:textSize="16sp"
-                android:layout_gravity="right"
-                android:textAppearance="?attr/textAppearanceBody2" />
+                android:layout_gravity="right" />
 
             <TextView
+                style="@style/textView16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/shipping_sum"
-                android:textSize="16sp"
-                android:layout_gravity="right"
-                android:textAppearance="?attr/textAppearanceBody2" />
+                android:layout_gravity="right" />
 
             <TextView
+                style="@style/textView16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tax_sum"
-                android:textSize="16sp"
-                android:layout_gravity="right"
-                android:textAppearance="?attr/textAppearanceBody2" />
+                android:layout_gravity="right" />
 
         </LinearLayout>
 
         <Button
+            style="@style/buttonPayCart"
             android:id="@+id/buttonPay"
-            style="@style/ButtonPay"
             android:layout_width="154dp"
             android:layout_height="56dp"
             android:text="@string/pay_now"
             android:layout_marginBottom="16dp"
-            android:layout_marginEnd="99dp"
-            android:layout_marginStart="107dp"
             app:icon="@drawable/wallet"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:cornerRadius="999dp"/>
+            app:layout_constraintEnd_toEndOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
