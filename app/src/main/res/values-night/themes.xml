@@ -1,16 +1,76 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Theme.ViewResources" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+
+        <item name="colorPrimary">@color/light_blue</item>
+        <item name="colorPrimaryVariant">@color/black</item>
         <item name="colorOnPrimary">@color/black</item>
-        <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_200</item>
         <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+        <item name="topIcon">@color/greyNight</item>
+        <item name="crossIcon">@color/greyNight</item>
+        <item name="payButtonIcon">@color/black</item>
+        <item name="backgroundRegisterButton">@color/light_blue</item>
+        <item name="textColorHintContact">@color/dark_white</item>
+        <item name="titleCart">@color/greenNight</item>
+        <item name="lineCart">@color/dark_line</item>
+
     </style>
+
+    <style name="MyButtonRegisterOnContacts" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">?attr/backgroundRegisterButton</item>
+    </style>
+
+    <style name="inputContacts" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="android:backgroundTint">?attr/textColorHintContact</item>
+        <item name="boxCornerRadiusTopStart">4dp</item>
+        <item name="boxCornerRadiusTopEnd">4dp</item>
+    </style>
+
+    <style name="dropContacts" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
+        <item name="android:backgroundTint">?attr/textColorHintContact</item>
+        <item name="boxCornerRadiusTopStart">4dp</item>
+        <item name="boxCornerRadiusTopEnd">4dp</item>
+    </style>
+
+    <style name="titleCart" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">?attr/titleCart</item>
+    </style>
+
+    <style name="textView16" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/dark_white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="textView12" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/dark_white</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="textView20" parent="textView16">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/yellowNight</item>
+    </style>
+    <style name="buttonPayCart" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/greenNight</item>
+        <item name="cornerRadius">999dp</item>
+        <item name="android:textColor">@color/dark_button</item>
+        <item name="iconTint">@color/dark_button</item>
+    </style>
+
+    <style name="textViewSignIn" parent="textView20">
+        <item name="android:textColor">@color/dark_white</item>
+    </style>
+
+    <style name="textViewReset" parent="textViewRegister">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/dark_white</item>
+    </style>
+
+    <style name="registerInput" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:textColorHint">@color/dark_white</item>
+    </style>
+
 </resources>

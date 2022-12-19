@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="topIcon" format="color"/>
+    <attr name="crossIcon" format="color"/>
+    <attr name="payButtonIcon" format="color"/>
+    <attr name="textColorHintContact" format="color"/>
+    <attr name="backgroundRegisterButton" format="color"/>
+    <attr name="titleCart" format="color"/>
+    <attr name="lineCart" format="color"/>
+</resources>
