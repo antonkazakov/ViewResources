@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="myFigmaStyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="background">@color/main_color</item>
+        <item name="titleTextColor">@color/menu_header</item>
+    </style>
+
+    <style name="headerText" parent="myFigmaStyle">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/headerTextColor</item>
+    </style>
+
+    <style name="commonText" parent="myFigmaStyle">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/commonTextColor</item>
+    </style>
+
+    <style name="customCartButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/cart_button</item>
+    </style>
+
+    <style name="customApplyButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/contacts_apply_button</item>
+    </style>
+
+    <style name="myTextInput" parent="ThemeOverlay.Material3.MaterialTimePicker.Display.TextInputEditText">
+        <item name="boxStrokeColor">@color/teal_700</item>
+    </style>
+
+
+</resources>

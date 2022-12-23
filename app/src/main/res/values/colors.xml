@@ -7,4 +7,23 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="grey">#99949f</color>
+
+    <color name="myBlue">#1565c0</color>
+
+    <color name="icons">#FFFFFFFF</color>
+    <color name="icons_secondary">#979797</color>
+    <color name="icons_contacts">#979797</color>
+    <color name="main_color">#2980B9</color>
+    <color name="cart_button">#37474f</color>
+    <color name="contacts_apply_button">#2ECC71</color>
+    <color name="commonTextColor">#263238</color>
+    <color name="headerTextColor">#263238</color>
+    <color name="cart_header">#263238</color>
+    <color name="menu_header">#FFFFFF</color>
+    <color name="close_icon">#E74C3C</color>
+    <color name="sign_in_color">#2980B9</color>
+    <color name="sign_in_text">#263238</color>
+    <color name="stroke_color">#F0F0F0</color>
+
 </resources>

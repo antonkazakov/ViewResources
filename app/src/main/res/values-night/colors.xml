@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="icons">#888888</color>
+    <color name="icons_secondary">#FFFFFFFF</color>
+    <color name="icons_contacts">#979797</color>
+    <color name="main_color">#111111</color>
+    <color name="cart_button">#89ED5B</color>
+    <color name="contacts_apply_button">#4FB8FF</color>
+    <color name="commonTextColor">#E0E0E0</color>
+    <color name="headerTextColor">#FFD76F</color>
+    <color name="cart_header">#89ED5B</color>
+    <color name="menu_header">#E0E0E0</color>
+    <color name="close_icon">#888888</color>
+    <color name="sign_in_color">#4FB8FF</color>
+    <color name="sign_in_text">#E0E0E0</color>
+    <color name="stroke_color">#888888</color>
+
+
+</resources>
