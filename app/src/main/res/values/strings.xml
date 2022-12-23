@@ -7,4 +7,7 @@
     <string name="address">Address</string>
     <string name="zip">Zip</string>
     <string name="state">State</string>
+    <string name="birthday">Birthday</string>
+    <string name="notes">Notes</string>
+    <string name="register">Register</string>
 </resources>
